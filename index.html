@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code&block</title>
+
+    <!-- pretendard -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <!-- tailwindcss -->
+    <script src="/js/tailwind.js"></script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body class="bg-[#fff]">
+    <div class="flex items-center justify-center w-screen h-screen">
+        <div class="flex items-center">
+            <div class="text-1"><img src="/src/svg/text_code.svg" alt=""></div>
+            <div class="w-10 h-12 text-2 relative">
+                <img src="/src/svg/text_ampersand.svg" alt="" class="size-full object-cover">
+                <div class="boxes absolute inset-0 flex items-center justify-center">
+                    <div class="box bg-black absolute top-0 left-0 w-4 h-4"></div>
+                    <div class="box bg-black absolute top-0 right-0 w-4 h-4"></div>
+                    <div class="box bg-black absolute bottom-0 left-0 w-4 h-4"></div>
+                    <div class="box bg-black absolute bottom-0 right-0 w-4 h-4"></div>
+                    <div class="companyHistory mx-12 absolute bottom-0 left-0 right-0 h-20 z-10 bg-[url('/src/svg/bg-companyHistory.svg')] bg-center bg-no-repeat"></div>
+                </div>
+
+            </div>
+            <div class="text-3"><img src="/src/svg/text_block.svg" alt=""></div>
+        </div>
+    </div>
+</body>
+
+<style>
+    @keyframes fadeIn {
+        0% {
+            transform: translateY(100%);
+            opacity: 0;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        10% {
+            transform: translateY(0%);
+            opacity: 1;
+            background-color: #fff;
+            margin-left: 48px;
+            margin-right: 48px;
+        }
+
+        /* 유지 대신 점진적 변화 */
+        25% {
+            width: 4px;
+            height: 40px;
+            margin-left: 40px;
+            margin-right: 40px;
+            background-color: #000;
+        }
+
+        40% {
+            width: 90px;
+            height: 24px;
+            margin-left: 24px;
+            margin-right: 24px;
+            background-color: #000;
+        }
+
+        55% {
+            width: 400px;
+            height: 48px;
+            margin-left: 0;
+            margin-right: 0;
+            background-color: #000;
+        }
+
+        70% {
+            width: 48px;
+            height: 48px;
+            margin-left: 0;
+            margin-right: 0;
+            background-color: #000;
+        }
+
+        100% {
+            width: calc(100vw - 32px);
+            height: calc(100vh - 56px);
+            background-color: #F1F1F1;
+            margin: 16px;
+            margin-bottom: 40px;
+        }
+    }
+
+
+    @keyframes disappear {
+        0% {
+            opacity: 1;
+        }
+
+        40% {
+            opacity: 1;
+        }
+
+        65% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+            width: 0px;
+            display: none;
+        }
+    }
+
+    @keyframes appear {
+        0% {
+            opacity: 0;
+        }
+
+        90% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+
+
+    .text-2 {
+        position: relative;
+        animation: fadeIn 5s ease-in-out forwards;
+    }
+
+    .text-1,
+    .text-3,
+    .text-2 img {
+        animation: disappear 5s ease-in-out forwards;
+    }
+
+    .text-2 .boxes {
+        animation: appear 5s ease-in-out forwards;
+    }
+
+    .text-2 .boxes .box:nth-of-type(1) {
+        animation: appear 5s ease-in-out forwards;
+    }
+
+    .text-2 .boxes .box:nth-of-type(2),
+    .text-2 .boxes .box:nth-of-type(3),
+    .text-2 .boxes .box:nth-of-type(4) {
+        animation: appear 6s ease-in-out forwards;
+    }
+
+    .text-2 .boxes .companyHistory{
+        animation:appear 6.5s ease-in-out forwards;
+    }
+</style>
+
+</html>

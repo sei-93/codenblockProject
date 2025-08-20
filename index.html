@@ -59,15 +59,15 @@
                         <div class="box bg-black absolute top-0 right-0 w-4 h-4"></div>
                         <div class="box bg-black absolute bottom-0 left-0 w-4 h-4"></div>
                         <div class="box bg-black absolute bottom-0 right-0 w-4 h-4"></div>
-                        <div class="absolute bottom-[102px] left-1/2 -translate-x-1/2 p-2 flex gap-2 items-center bg-[#E1E2E4E5] rounded-[12px]"
+                        <div class="absolute min-w-[330px] bottom-[102px] h-[72px] left-1/2 -translate-x-1/2 p-2 flex gap-2 items-center bg-[#E1E2E4E5] rounded-[12px]"
                             style="font-family: 'Asta Sans', sans-serif;">
-                            <a href="#" class="block w-14 h-14"><img src="/src/svg/icon_shoooook.svg" alt=""
+                            <a href="#" class="flex-shrink-0 block w-14 h-14"><img src="/src/svg/icon_shoooook.svg" alt=""
                                     class="size-full object-cover"></a>
+                            <a href="#" id="portfolio"
+                                class="flex-shrink-0 flex items-center justify-center min-w-[56px] h-full p-2 relative">포트폴리오</a>
+                            <a href="#" class="flex-shrink-0 flex items-center justify-center min-w-[45px] h-full p-2">회사소개</a>
                             <a href="#"
-                                class="flex items-center justify-center min-w-[56px] p-2">포트폴리오</a>
-                            <a href="#" class="flex items-center justify-center min-w-[45px] p-2">회사소개</a>
-                            <a href="#"
-                                class="flex items-center justify-center min-w-[70px] h-[56px] overflow-hidden relative p-[1px] rounded-[8px]">
+                                class="flex-shrink-0 flex items-center justify-center min-w-[70px] h-full overflow-hidden relative p-[1px] rounded-[8px]">
                                 <div
                                     class="absolute aspect-square w-[120px] rounded-full animate-spin-slow bg-[conic-gradient(#767676,#F1F1F1,#999999,#767676,#F1F1F1,#999999)]">
                                 </div>
@@ -260,6 +260,19 @@
 
     #contentHeader {
         animation: appear 7s ease-in forwards;
+    }
+
+    #portfolio::after{
+        content:"21";
+        border-radius:100px;
+        position:absolute;
+        top:0;
+        right:0;
+        color:white;
+        font-size:12px;
+        font-family:"Asta Sans";
+        background: #020F2333;
+        padding:2px 8px;
     }
 </style>
 

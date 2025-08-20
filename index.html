@@ -83,20 +83,20 @@
                         </div>
                         <div id="mainBanner" class="swiper">
                             <div class="mb-4">
-                                
+
                             </div>
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide h-[350px]"><img src="/src/item-1.png" alt=""
+                                <div class="swiper-slide aspect-[16/9] max-h-[350px]"><img src="/src/item-1.png" alt=""
                                         class="size-full object-cover"></div>
-                                <div class="swiper-slide h-[350px]"><img src="/src/item-2.png" alt=""
+                                <div class="swiper-slide aspect-[16/9] max-h-[350px]"><img src="/src/item-2.png" alt=""
                                         class="size-full object-cover"></div>
-                                <div class="swiper-slide h-[350px]"><img src="/src/item-1.png" alt=""
+                                <div class="swiper-slide aspect-[16/9] max-h-[350px]"><img src="/src/item-1.png" alt=""
                                         class="size-full object-cover"></div>
-                                <div class="swiper-slide h-[350px]"><img src="/src/item-2.png" alt=""
+                                <div class="swiper-slide aspect-[16/9] max-h-[350px]"><img src="/src/item-2.png" alt=""
                                         class="size-full object-cover"></div>
-                                <div class="swiper-slide h-[350px]"><img src="/src/item-1.png" alt=""
+                                <div class="swiper-slide aspect-[16/9] max-h-[350px]"><img src="/src/item-1.png" alt=""
                                         class="size-full object-cover"></div>
-                                <div class="swiper-slide h-[350px]"><img src="/src/item-2.png" alt=""
+                                <div class="swiper-slide aspect-[16/9] max-h-[350px]"><img src="/src/item-2.png" alt=""
                                         class="size-full object-cover"></div>
                             </div>
                         </div>
@@ -104,17 +104,36 @@
                 </div>
 
                 <script>
-                    document.addEventListener("DOMContentLoaded", () => {
-                        new Swiper("#mainBanner", {
-                            slidesPerView: 3,
-                            spaceBetween: 48,
-                            loop: true,
-                            autoplay: {
-                                delay: 4000,
+                    new Swiper("#mainBanner", {
+                        loop: true,
+                        autoplay: {
+                            delay: 4000,
+                        },
+                        slidesPerView: 1.1,
+                        centeredSlides: true,
+                        speed: 800,
+                        breakpoints: {
+                            // 모바일 (0px 이상)
+                            0: {
+                                slidesPerView: 1.1,
+                                spaceBetween: 16,
+                                centeredSlides: true,
                             },
-                            speed: 800,
-                        });
+                            // 태블릿 (768px 이상)
+                            768: {
+                                slidesPerView: 2,
+                                spaceBetween: 24,
+                                centeredSlides: false,
+                            },
+                            // PC (1024px 이상)
+                            1024: {
+                                slidesPerView: 3,
+                                spaceBetween: 48,
+                                centeredSlides: false,
+                            }
+                        }
                     });
+
                 </script>
                 <div class="text-3"><img src="./src/svg/text_block.svg" alt=""></div>
                 <a href="/index.html" class="logo absolute bottom-2.5 left-4 w-20 h-3"><img

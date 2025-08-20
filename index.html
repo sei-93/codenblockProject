@@ -21,24 +21,33 @@
 </head>
 
 <body class="bg-[#fff]">
-    <div class="flex items-center justify-center w-screen h-screen">
-        <div class="flex items-center">
-            <div class="text-1"><img src="./src/svg/text_code.svg" alt=""></div>
-            <div class="w-10 h-12 text-2 relative">
-                <img src="./src/svg/text_ampersand.svg" alt="" class="size-full object-cover">
-                <div class="boxes absolute inset-0 flex items-center justify-center">
-                    <div class="box bg-black absolute top-0 left-0 w-4 h-4"></div>
-                    <div class="box bg-black absolute top-0 right-0 w-4 h-4"></div>
-                    <div class="box bg-black absolute bottom-0 left-0 w-4 h-4"></div>
-                    <div class="box bg-black absolute bottom-0 right-0 w-4 h-4"></div>
-                    <div class="companyHistory mx-12 absolute bottom-0 left-0 right-0 h-20 z-10 bg-[url('./src/svg/bg-companyHistory.svg')] bg-center bg-no-repeat"></div>
+    <section>
+        <div class="flex items-center justify-center w-screen h-screen">
+            <div class="flex items-center">
+                <div class="text-1"><img src="./src/svg/text_code.svg" alt=""></div>
+                <div class="w-10 h-12 text-2 relative">
+                    <img src="./src/svg/text_ampersand.svg" alt="" class="size-full object-cover">
                 </div>
-
+                <div class="z-10 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-black toContainerBox overflow-hidden">
+                    <div class="absolute top-[30px] left-6 flex gap-[78px]">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="boxes absolute inset-0 flex items-center justify-center">
+                        <div class="box bg-black absolute top-0 left-0 w-4 h-4"></div>
+                        <div class="box bg-black absolute top-0 right-0 w-4 h-4"></div>
+                        <div class="box bg-black absolute bottom-0 left-0 w-4 h-4"></div>
+                        <div class="box bg-black absolute bottom-0 right-0 w-4 h-4"></div>
+                        <div
+                            class="companyHistory mx-12 absolute bottom-0 left-0 right-0 h-20 z-10 bg-[url('./src/svg/bg-companyHistory.svg')] bg-center bg-no-repeat">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-3"><img src="./src/svg/text_block.svg" alt=""></div>
+                <div class="logo absolute bottom-2.5 left-4 w-20 h-3"><img src="./src/svg/text_codenblock.svg" alt=""></div>
             </div>
-            <div class="text-3"><img src="./src/svg/text_block.svg" alt=""></div>
-            <div class="logo absolute bottom-2.5 left-4 w-20 h-3"><img src="./src/svg/text_codenblock.svg" alt=""></div>
         </div>
-    </div>
+    </section>
 </body>
 
 <style>
@@ -50,7 +59,8 @@
             margin-right: 0;
         }
 
-        10%, 15% {
+        10%,
+        15% {
             transform: translateY(0%);
             opacity: 1;
             background-color: #fff;
@@ -58,9 +68,8 @@
             margin-right: 48px;
         }
 
-
-        /* 유지 대신 점진적 변화 */
-        25%, 30% {
+        25%,
+        30% {
             width: 4px;
             height: 40px;
             margin-left: 40px;
@@ -68,56 +77,79 @@
             background-color: #000;
         }
 
-        40%, 45% {
+        40%,
+        45% {
             width: 90px;
             height: 24px;
             margin-left: 24px;
             margin-right: 24px;
             background-color: #000;
+            opacity: 1;
         }
 
-        55%, 60% {
-            width: 400px;
-            height: 48px;
-            margin-left: 0;
-            margin-right: 0;
-            background-color: #000;
-        }
-
-        70%, 80% {
-            width: 48px;
-            height: 48px;
-            margin-left: 0;
-            margin-right: 0;
-            background-color: #000;
-        }
+        46%,
         100% {
-            width: calc(100vw - 32px);
-            height: calc(100vh - 56px);
-            background-color: #F1F1F1;
-            margin: 16px;
-            margin-bottom: 40px;
+            width: 90px;
+            height: 24px;
+            opacity: 0;
+            margin-left: 24px;
+            margin-right: 24px;
         }
+
     }
 
+    @keyframes fadeIn2 {
+        43% {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        44% {
+            background-color: #000;
+            width: 90px;
+            height: 24px;
+            opacity: 1;
+            margin-left: -10px;
+        }
+
+        55%,
+        60% {
+            background-color: #000;
+            width: 435px;
+            height: 48px;
+        }
+
+        70%,
+        80% {
+            width: 64px;
+            height: 64px;
+            background-color: #000;
+        }
+
+        100% {
+            width: calc(100% - 32px);
+            height: calc(100% - 56px);
+            background-color: #F1F1F1;
+        }
+    }
 
     @keyframes disappear {
         0% {
             opacity: 1;
         }
 
-        40% {
+        60% {
             opacity: 1;
         }
 
-        65% {
+        65%,
+        70% {
             opacity: 0;
         }
 
         100% {
             opacity: 0;
-            width: 0px;
-            display: none;
         }
     }
 
@@ -135,38 +167,41 @@
         }
     }
 
-
-
     .text-2 {
         position: relative;
-        animation: fadeIn 5s ease-in-out forwards;
+        animation: fadeIn 6s ease-in-out forwards;
     }
 
     .text-1,
     .text-3,
     .text-2 img {
-        animation: disappear 5s ease-in-out forwards;
+        animation: disappear 6s ease-in-out forwards;
     }
 
-    .text-2 .boxes {
-        animation: appear 5s ease-in-out forwards;
+    .toContainerBox {
+        animation: fadeIn2 6s ease-in-out forwards;
     }
 
-    .text-2 .boxes .box:nth-of-type(1) {
-        animation: appear 5s ease-in-out forwards;
-    }
-
-    .text-2 .boxes .box:nth-of-type(2),
-    .text-2 .boxes .box:nth-of-type(3),
-    .text-2 .boxes .box:nth-of-type(4) {
+    .toContainerBox .boxes {
         animation: appear 6s ease-in-out forwards;
     }
 
-    .text-2 .boxes .companyHistory{
-        animation:appear 6.5s ease-in-out forwards;
+    .toContainerBox .boxes .box:nth-of-type(1) {
+        animation: appear 6s ease-in-out forwards;
     }
-    .logo{
-        animation:appear 7s ease-in-out forwards;
+
+    .toContainerBox .boxes .box:nth-of-type(2),
+    .toContainerBox .boxes .box:nth-of-type(3),
+    .toContainerBox .boxes .box:nth-of-type(4) {
+        animation: appear 7s ease-in forwards;
+    }
+
+    .toContainerBox .boxes .companyHistory {
+        animation: appear 7.5s ease-in forwards;
+    }
+
+    .logo {
+        animation: appear 8s ease-in forwards;
     }
 </style>
 

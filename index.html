@@ -61,11 +61,13 @@
                         <div class="box bg-black absolute bottom-0 right-0 w-4 h-4"></div>
                         <div class="absolute min-w-[330px] bottom-[102px] h-[72px] left-1/2 -translate-x-1/2 p-2 flex gap-2 items-center bg-[#E1E2E4E5] rounded-[12px]"
                             style="font-family: 'Asta Sans', sans-serif;">
-                            <a href="#" class="flex-shrink-0 block w-14 h-14"><img src="/src/svg/icon_shoooook.svg" alt=""
+                            <a href="#" class="flex-shrink-0 block w-14 h-14"><img src="/src/svg/icon_shoooook.svg"
+                                    alt=""
                                     class="size-full object-cover"></a>
                             <a href="#" id="portfolio"
                                 class="flex-shrink-0 flex items-center justify-center min-w-[56px] h-full p-2 relative">포트폴리오</a>
-                            <a href="#" class="flex-shrink-0 flex items-center justify-center min-w-[45px] h-full p-2">회사소개</a>
+                            <a href="#"
+                                class="flex-shrink-0 flex items-center justify-center min-w-[45px] h-full p-2">회사소개</a>
                             <a href="#"
                                 class="flex-shrink-0 flex items-center justify-center min-w-[70px] h-full overflow-hidden relative p-[1px] rounded-[8px]">
                                 <div
@@ -79,8 +81,41 @@
                         <div
                             class="companyHistory mx-12 absolute bottom-0 left-0 right-0 h-20 z-10 bg-[url('./src/svg/bg-companyHistory.svg')] bg-center bg-no-repeat">
                         </div>
+                        <div id="mainBanner" class="swiper">
+                            <div class="mb-4">
+                                
+                            </div>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide h-[350px]"><img src="/src/item-1.png" alt=""
+                                        class="size-full object-cover"></div>
+                                <div class="swiper-slide h-[350px]"><img src="/src/item-2.png" alt=""
+                                        class="size-full object-cover"></div>
+                                <div class="swiper-slide h-[350px]"><img src="/src/item-1.png" alt=""
+                                        class="size-full object-cover"></div>
+                                <div class="swiper-slide h-[350px]"><img src="/src/item-2.png" alt=""
+                                        class="size-full object-cover"></div>
+                                <div class="swiper-slide h-[350px]"><img src="/src/item-1.png" alt=""
+                                        class="size-full object-cover"></div>
+                                <div class="swiper-slide h-[350px]"><img src="/src/item-2.png" alt=""
+                                        class="size-full object-cover"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                        new Swiper("#mainBanner", {
+                            slidesPerView: 3,
+                            spaceBetween: 48,
+                            loop: true,
+                            autoplay: {
+                                delay: 4000,
+                            },
+                            speed: 800,
+                        });
+                    });
+                </script>
                 <div class="text-3"><img src="./src/svg/text_block.svg" alt=""></div>
                 <a href="/index.html" class="logo absolute bottom-2.5 left-4 w-20 h-3"><img
                         src="./src/svg/text_codenblock.svg" alt="">
@@ -262,17 +297,17 @@
         animation: appear 7s ease-in forwards;
     }
 
-    #portfolio::after{
-        content:"21";
-        border-radius:100px;
-        position:absolute;
-        top:0;
-        right:0;
-        color:white;
-        font-size:12px;
-        font-family:"Asta Sans";
+    #portfolio::after {
+        content: "21";
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: white;
+        font-size: 12px;
+        font-family: "Asta Sans";
         background: #020F2333;
-        padding:2px 8px;
+        padding: 2px 8px;
     }
 </style>
 

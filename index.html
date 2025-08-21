@@ -32,7 +32,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
-<body class="bg-[#fff] leading-[130%] tracking-[-1px] text-sm">
+<body class="bg-[#fff] leading-[130%] tracking-[-1px] text-sm" style="font-family: 'Asta Sans', sans-serif;">
     <section class="w-screen h-screen overflow-hidden relative">
         <div class="flex items-center justify-center w-screen h-screen">
             <div class="flex items-center">
@@ -48,7 +48,7 @@
                             <div class="font-[Onest] text-sm font-semibold">SEOUL, KR</div>
                             <div id="timeBox" class="font-[Onest] flex gap-1 text-[#464646]"></div>
                         </div>
-                        <div class="text-sm text-[#121212]" style="font-family: 'Asta Sans', sans-serif;">
+                        <div class="text-sm text-[#121212]">
                             코드앤블록은 카페24 기반 이커머스에 특화된<br>
                             에이전시로 기술적 완성도와 경험의 깊이를<br>
                             더해 실질적이고 쓰이는 결과를 만듭니다.
@@ -60,8 +60,7 @@
                         <div class="box bg-black absolute bottom-0 left-0 w-4 h-4"></div>
                         <div class="box bg-black absolute bottom-0 right-0 w-4 h-4"></div>
                         <div id="linkBox"
-                            class="absolute min-w-[330px] bottom-[102px] h-[72px] left-1/2 -translate-x-1/2 p-2 flex gap-2 items-center bg-[#E1E2E4E5] rounded-[12px]"
-                            style="font-family: 'Asta Sans', sans-serif;">
+                            class="absolute min-w-[330px] bottom-[102px] h-[72px] left-1/2 -translate-x-1/2 p-2 flex gap-2 items-center bg-[#E1E2E4E5] rounded-[12px]">
                             <a href="#" class="flex-shrink-0 block w-14 h-14"><img src="./src/svg/icon_shoooook.svg"
                                     alt=""
                                     class="size-full object-cover"></a>
@@ -85,133 +84,146 @@
 
                         <div id="mainBanner" class="swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide  max-h-[452px] rounded-sm overflow-hidden">
-                                    <div
-                                        class="mb-4 flex items-center justify-between mx-auto p-2 bg-[#E1E2E4E5] rounded-lg">
-                                        <div class="flex items-center">
-                                            <div><img src="./src/svg/logo_youngranu.svg" alt=""></div>
-                                            <div>영라뉴 웹사이트 리뉴얼</div>
-                                            <div>@CAFE24</div>
+                                <div class="swiper-slide max-h-[452px] rounded-sm overflow-hidden">
+                                    <div class="portfolioLinkBox">
+                                        <div class="flex justify-end">
+                                            <a href="#"
+                                                class="w-[51px] h-6 bg-[#1111111A] px-1.5 py-1 mb-1.5 text-[#464646] text-xs rounded-[4px]">바로가기</a>
                                         </div>
-                                        <div class="flex items-center">
-                                            <a href="#" class="flex items-center justify-center"><img
-                                                    src="./src/svg/icon_download.svg" alt=""></a>
-                                            <a href="#" class="flex items-center justify-center"><img
-                                                    src="./src/svg/icon_swiper-prev.svg" alt=""></a>
-                                            <a href="#" class="flex items-center justify-center"><img
-                                                    src="./src/svg/icon_swiper-next.svg" alt=""></a>
-                                            <a href="#" class="flex items-center justify-center"><img
-                                                    src="./src/svg/icon_.newTab.svg" alt=""></a>
-                                        </div>
-                                    </div>
-                                    <a href="#"><img src="./src/item-1.png" alt=""
-                                            class="size-full object-cover"></a>
-                                </div>
-                                <div class="swiper-slide  max-h-[452px] rounded-sm overflow-hidden">
-                                    <div
-                                        class="mb-4 flex items-center justify-between mx-auto p-2 bg-[#E1E2E4E5] rounded-lg">
-                                        <div class="flex items-center">
-                                            <div><img src="./src/svg/logo_youngranu.svg" alt=""></div>
-                                            <div>영라뉴 웹사이트 리뉴얼</div>
-                                            <div>@CAFE24</div>
-                                        </div>
-                                        <div class="flex items-center">
-                                            <a href="#" class="flex items-center justify-center"><img
-                                                    src="./src/svg/icon_download.svg" alt=""></a>
-                                            <a href="#" class="flex items-center justify-center"><img
-                                                    src="./src/svg/icon_swiper-prev.svg" alt=""></a>
-                                            <a href="#" class="flex items-center justify-center"><img
-                                                    src="./src/svg/icon_swiper-next.svg" alt=""></a>
-                                            <a href="#" class="flex items-center justify-center"><img
-                                                    src="./src/svg/icon_.newTab.svg" alt=""></a>
+                                        <div
+                                            class="mb-4 flex items-center justify-between mx-auto p-2 bg-[#E1E2E4E5] rounded-lg">
+                                            <div class="flex items-center">
+                                                <div class="w-10 h-10 rounded-lg mr-3 "><img
+                                                        src="./src/svg/logo_youngranu.svg" alt=""></div>
+                                                <div class="mr-1.5">영라뉴 웹사이트 리뉴얼</div>
+                                                <div class="text-[#646464]">@CAFE24</div>
+                                            </div>
+                                            <div class="flex items-center">
+                                                <a href="#" class="flex items-center justify-center"><img
+                                                        src="./src/svg/icon_download.svg" alt=""></a>
+                                                <a href="#" class="flex items-center justify-center"><img
+                                                        src="./src/svg/icon_swiper-prev.svg" alt=""></a>
+                                                <a href="#" class="flex items-center justify-center"><img
+                                                        src="./src/svg/icon_swiper-next.svg" alt=""></a>
+                                                <a href="#" class="flex items-center justify-center"><img
+                                                        src="./src/svg/icon_.newTab.svg" alt=""></a>
+                                            </div>
                                         </div>
                                     </div>
                                     <a href="#"><img src="./src/item-1.png" alt=""
                                             class="size-full object-cover"></a>
                                 </div>
-                                <div class="swiper-slide  max-h-[452px] rounded-sm overflow-hidden">
-                                    <div
-                                        class="mb-4 flex items-center justify-between mx-auto p-2 bg-[#E1E2E4E5] rounded-lg">
-                                        <div class="flex items-center">
-                                            <div><img src="./src/svg/logo_youngranu.svg" alt=""></div>
-                                            <div>영라뉴 웹사이트 리뉴얼</div>
-                                            <div>@CAFE24</div>
+                                <div class="swiper-slide max-h-[452px] rounded-sm overflow-hidden">
+                                    <div class="portfolioLinkBox">
+                                        <div class="flex justify-end">
+                                            <a href="#"
+                                                class="w-[51px] h-6 bg-[#1111111A] px-1.5 py-1 mb-1.5 text-[#464646] text-xs rounded-[4px]">바로가기</a>
                                         </div>
-                                        <div class="flex items-center">
-                                            <a href="#" class="flex items-center justify-center"><img
-                                                    src="./src/svg/icon_download.svg" alt=""></a>
-                                            <a href="#" class="flex items-center justify-center"><img
-                                                    src="./src/svg/icon_swiper-prev.svg" alt=""></a>
-                                            <a href="#" class="flex items-center justify-center"><img
-                                                    src="./src/svg/icon_swiper-next.svg" alt=""></a>
-                                            <a href="#" class="flex items-center justify-center"><img
-                                                    src="./src/svg/icon_.newTab.svg" alt=""></a>
-                                        </div>
-                                    </div>
-                                    <a href="#"><img src="./src/item-1.png" alt=""
-                                            class="size-full object-cover"></a>
-                                </div>
-                                <div class="swiper-slide  max-h-[452px] rounded-sm overflow-hidden">
-                                    <div
-                                        class="mb-4 flex items-center justify-between mx-auto p-2 bg-[#E1E2E4E5] rounded-lg">
-                                        <div class="flex items-center">
-                                            <div><img src="./src/svg/logo_youngranu.svg" alt=""></div>
-                                            <div>영라뉴 웹사이트 리뉴얼</div>
-                                            <div>@CAFE24</div>
-                                        </div>
-                                        <div class="flex items-center">
-                                            <a href="#" class="flex items-center justify-center"><img
-                                                    src="./src/svg/icon_download.svg" alt=""></a>
-                                            <a href="#" class="flex items-center justify-center"><img
-                                                    src="./src/svg/icon_swiper-prev.svg" alt=""></a>
-                                            <a href="#" class="flex items-center justify-center"><img
-                                                    src="./src/svg/icon_swiper-next.svg" alt=""></a>
-                                            <a href="#" class="flex items-center justify-center"><img
-                                                    src="./src/svg/icon_.newTab.svg" alt=""></a>
+                                        <div
+                                            class="mb-4 flex items-center justify-between mx-auto p-2 bg-[#E1E2E4E5] rounded-lg">
+                                            <div class="flex items-center">
+                                                <div class="w-10 h-10 rounded-lg mr-3 "><img
+                                                        src="./src/svg/logo_youngranu.svg" alt=""></div>
+                                                <div class="mr-1.5">영라뉴 웹사이트 리뉴얼</div>
+                                                <div class="text-[#646464]">@CAFE24</div>
+                                            </div>
+                                            <div class="flex items-center">
+                                                <a href="#" class="flex items-center justify-center"><img
+                                                        src="./src/svg/icon_download.svg" alt=""></a>
+                                                <a href="#" class="flex items-center justify-center"><img
+                                                        src="./src/svg/icon_swiper-prev.svg" alt=""></a>
+                                                <a href="#" class="flex items-center justify-center"><img
+                                                        src="./src/svg/icon_swiper-next.svg" alt=""></a>
+                                                <a href="#" class="flex items-center justify-center"><img
+                                                        src="./src/svg/icon_.newTab.svg" alt=""></a>
+                                            </div>
                                         </div>
                                     </div>
                                     <a href="#"><img src="./src/item-1.png" alt=""
                                             class="size-full object-cover"></a>
                                 </div>
-                                <div class="swiper-slide  max-h-[452px] rounded-sm overflow-hidden">
-                                    <div
-                                        class="mb-4 flex items-center justify-between mx-auto p-2 bg-[#E1E2E4E5] rounded-lg">
-                                        <div class="flex items-center">
-                                            <div><img src="./src/svg/logo_youngranu.svg" alt=""></div>
-                                            <div>영라뉴 웹사이트 리뉴얼</div>
-                                            <div>@CAFE24</div>
+                                <div class="swiper-slide max-h-[452px] rounded-sm overflow-hidden">
+                                    <div class="portfolioLinkBox">
+                                        <div class="flex justify-end">
+                                            <a href="#"
+                                                class="w-[51px] h-6 bg-[#1111111A] px-1.5 py-1 mb-1.5 text-[#464646] text-xs rounded-[4px]">바로가기</a>
                                         </div>
-                                        <div class="flex items-center">
-                                            <a href="#" class="flex items-center justify-center"><img
-                                                    src="./src/svg/icon_download.svg" alt=""></a>
-                                            <a href="#" class="flex items-center justify-center"><img
-                                                    src="./src/svg/icon_swiper-prev.svg" alt=""></a>
-                                            <a href="#" class="flex items-center justify-center"><img
-                                                    src="./src/svg/icon_swiper-next.svg" alt=""></a>
-                                            <a href="#" class="flex items-center justify-center"><img
-                                                    src="./src/svg/icon_.newTab.svg" alt=""></a>
+                                        <div
+                                            class="mb-4 flex items-center justify-between mx-auto p-2 bg-[#E1E2E4E5] rounded-lg">
+                                            <div class="flex items-center">
+                                                <div class="w-10 h-10 rounded-lg mr-3 "><img
+                                                        src="./src/svg/logo_youngranu.svg" alt=""></div>
+                                                <div class="mr-1.5">영라뉴 웹사이트 리뉴얼</div>
+                                                <div class="text-[#646464]">@CAFE24</div>
+                                            </div>
+                                            <div class="flex items-center">
+                                                <a href="#" class="flex items-center justify-center"><img
+                                                        src="./src/svg/icon_download.svg" alt=""></a>
+                                                <a href="#" class="flex items-center justify-center"><img
+                                                        src="./src/svg/icon_swiper-prev.svg" alt=""></a>
+                                                <a href="#" class="flex items-center justify-center"><img
+                                                        src="./src/svg/icon_swiper-next.svg" alt=""></a>
+                                                <a href="#" class="flex items-center justify-center"><img
+                                                        src="./src/svg/icon_.newTab.svg" alt=""></a>
+                                            </div>
                                         </div>
                                     </div>
                                     <a href="#"><img src="./src/item-1.png" alt=""
                                             class="size-full object-cover"></a>
                                 </div>
-                                <div class="swiper-slide  max-h-[452px] rounded-sm overflow-hidden">
-                                    <div
-                                        class="mb-4 flex items-center justify-between mx-auto p-2 bg-[#E1E2E4E5] rounded-lg">
-                                        <div class="flex items-center">
-                                            <div><img src="./src/svg/logo_youngranu.svg" alt=""></div>
-                                            <div>영라뉴 웹사이트 리뉴얼</div>
-                                            <div>@CAFE24</div>
+                                <div class="swiper-slide max-h-[452px] rounded-sm overflow-hidden">
+                                    <div class="portfolioLinkBox">
+                                        <div class="flex justify-end">
+                                            <a href="#"
+                                                class="w-[51px] h-6 bg-[#1111111A] px-1.5 py-1 mb-1.5 text-[#464646] text-xs rounded-[4px]">바로가기</a>
                                         </div>
-                                        <div class="flex items-center">
-                                            <a href="#" class="flex items-center justify-center"><img
-                                                    src="./src/svg/icon_download.svg" alt=""></a>
-                                            <a href="#" class="flex items-center justify-center"><img
-                                                    src="./src/svg/icon_swiper-prev.svg" alt=""></a>
-                                            <a href="#" class="flex items-center justify-center"><img
-                                                    src="./src/svg/icon_swiper-next.svg" alt=""></a>
-                                            <a href="#" class="flex items-center justify-center"><img
-                                                    src="./src/svg/icon_.newTab.svg" alt=""></a>
+                                        <div
+                                            class="mb-4 flex items-center justify-between mx-auto p-2 bg-[#E1E2E4E5] rounded-lg">
+                                            <div class="flex items-center">
+                                                <div class="w-10 h-10 rounded-lg mr-3 "><img
+                                                        src="./src/svg/logo_youngranu.svg" alt=""></div>
+                                                <div class="mr-1.5">영라뉴 웹사이트 리뉴얼</div>
+                                                <div class="text-[#646464]">@CAFE24</div>
+                                            </div>
+                                            <div class="flex items-center">
+                                                <a href="#" class="flex items-center justify-center"><img
+                                                        src="./src/svg/icon_download.svg" alt=""></a>
+                                                <a href="#" class="flex items-center justify-center"><img
+                                                        src="./src/svg/icon_swiper-prev.svg" alt=""></a>
+                                                <a href="#" class="flex items-center justify-center"><img
+                                                        src="./src/svg/icon_swiper-next.svg" alt=""></a>
+                                                <a href="#" class="flex items-center justify-center"><img
+                                                        src="./src/svg/icon_.newTab.svg" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#"><img src="./src/item-1.png" alt=""
+                                            class="size-full object-cover"></a>
+                                </div>
+                                <div class="swiper-slide max-h-[452px] rounded-sm overflow-hidden">
+                                    <div class="portfolioLinkBox">
+                                        <div class="flex justify-end">
+                                            <a href="#"
+                                                class="w-[51px] h-6 bg-[#1111111A] px-1.5 py-1 mb-1.5 text-[#464646] text-xs rounded-[4px]">바로가기</a>
+                                        </div>
+                                        <div
+                                            class="mb-4 flex items-center justify-between mx-auto p-2 bg-[#E1E2E4E5] rounded-lg">
+                                            <div class="flex items-center">
+                                                <div class="w-10 h-10 rounded-lg mr-3 "><img
+                                                        src="./src/svg/logo_youngranu.svg" alt=""></div>
+                                                <div class="mr-1.5">영라뉴 웹사이트 리뉴얼</div>
+                                                <div class="text-[#646464]">@CAFE24</div>
+                                            </div>
+                                            <div class="flex items-center">
+                                                <a href="#" class="flex items-center justify-center"><img
+                                                        src="./src/svg/icon_download.svg" alt=""></a>
+                                                <a href="#" class="flex items-center justify-center"><img
+                                                        src="./src/svg/icon_swiper-prev.svg" alt=""></a>
+                                                <a href="#" class="flex items-center justify-center"><img
+                                                        src="./src/svg/icon_swiper-next.svg" alt=""></a>
+                                                <a href="#" class="flex items-center justify-center"><img
+                                                        src="./src/svg/icon_.newTab.svg" alt=""></a>
+                                            </div>
                                         </div>
                                     </div>
                                     <a href="#"><img src="./src/item-1.png" alt=""
@@ -268,6 +280,7 @@
             margin-left: 0;
             margin-right: 0;
         }
+
         10%,
         15% {
             transform: translateY(0%);
@@ -276,6 +289,7 @@
             margin-left: 48px;
             margin-right: 48px;
         }
+
         25%,
         30% {
             width: 4px;
@@ -336,8 +350,8 @@
         }
 
         100% {
-            width: calc(100% - 32px);
-            height: calc(100% - 56px);
+            width:calc(100% - 32px);
+            height:calc(100% - 48px);
             background-color: #F1F1F1;
         }
     }
@@ -401,7 +415,7 @@
     }
 
     .toContainerBox {
-        animation: fadeIn2 5s cubic-bezier(.54,0,.63,1.2) forwards;
+        animation: fadeIn2 5s cubic-bezier(.54, 0, .63, 1.2) forwards;
 
     }
 
@@ -450,6 +464,15 @@
 
     #mainBanner {
         animation: appear 7.5s ease-in forwards;
+    }
+
+    #mainBanner .portfolioLinkBox{
+        opacity:0;
+        transition:opacity 0.5s ease-in-out;
+    }
+
+    #mainBanner .swiper-slide-active .portfolioLinkBox {
+        opacity:1;
     }
 </style>
 

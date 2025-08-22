@@ -7,7 +7,6 @@
         margin-right: 0;
     }
 
-    60%,
     100% {
         transform: translateY(0%);
         opacity: 1;
@@ -27,7 +26,6 @@
         margin-right: 48px;
     }
 
-    60%,
     100% {
         width: 4px;
         height: 40px;
@@ -47,7 +45,6 @@
         background-color: #000;
     }
 
-    60%,
     100% {
         width: 90px;
         height: 24px;
@@ -66,7 +63,6 @@
         background-color: #000;
     }
 
-    60%,
     100% {
         width: 90px;
         height: 24px;
@@ -87,7 +83,6 @@
         margin-left: -10px;
     }
 
-    60%,
     100% {
         background-color: #000;
         width: 435px;
@@ -104,7 +99,6 @@
         background-color: #000;
     }
 
-    60%,
     100% {
         width: 64px;
         height: 64px;
@@ -130,33 +124,27 @@
 @keyframes appear {
     from {
         opacity: 0;
+        visibility: hidden;
     }
 
     to {
         opacity: 1;
+        visibility:visible;
     }
 }
 
 @keyframes disappear {
     from {
         opacity: 1;
+         visibility: visible;
     }
 
     to {
         opacity: 0;
-        display: hidden;
+        visibility: hidden;
     }
 }
 
-@keyframes hidden {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 0;
-    }
-}
 
 
 /* @keyframes fadeIn {

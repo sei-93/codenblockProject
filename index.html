@@ -50,9 +50,6 @@
           class="z-10 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-black toContainerBox overflow-hidden">
         </div>
       </div>
-      <!-- <a href="/index.html" class="logo absolute bottom-2.5 left-4 w-20 h-3"><img
-                    src="./src/svg/text_codenblock.svg" alt="">
-            </a> -->
     </div>
   </section>
   <section id="section-2"
@@ -126,19 +123,21 @@
         더해 실질적이고 쓰이는 결과를 만듭니다.
       </div>
       <div id="linkBox"
-        class="absolute min-w-[330px] bottom-[40px] h-[72px] left-1/2 -translate-x-1/2 p-2 flex gap-2 items-center bg-[#E1E2E4E5] rounded-[12px] z-20">
-        <a href="#" class="flex-shrink-0 block w-14 h-14"><img src="./src/svg/icon_shoooook.svg" alt=""
+        class="absolute flex-shrink-0 min-w-fit bottom-[40px] h-[72px] left-1/2 -translate-x-1/2 p-2 flex gap-2 items-center bg-[#E1E2E4E5] rounded-[12px] z-30">
+        <a href="#" class=" block w-14 h-14"><img src="./src/svg/icon_shoooook.svg" alt=""
             class="size-full object-cover" /></a>
         <a href="#" id="portfolio"
-          class="flex-shrink-0 flex items-center justify-center min-w-[56px] h-full p-2 relative">포트폴리오</a>
-        <a href="#" class="flex-shrink-0 flex items-center justify-center min-w-[45px] h-full p-2">회사소개</a>
+          class=" items-center justify-center min-w-[56px] h-full p-2 relative hidden md:flex">포트폴리오</a>
+        <a href="#" class=" items-center justify-center min-w-[45px] h-full p-2 hidden md:flex">회사소개</a>
         <a href="#"
-          class="flex-shrink-0 flex items-center justify-center min-w-[70px] h-full overflow-hidden relative p-[1px] rounded-[8px]">
+          class="text-nowrap flex items-center justify-center min-w-[70px] h-full overflow-hidden relative p-[1px] rounded-[8px]">
           <div
             class="absolute aspect-square w-[120px] rounded-full animate-spin-slow bg-[conic-gradient(#767676,#F1F1F1,#999999,#767676,#F1F1F1,#999999)]">
           </div>
           <div class="w-full h-full bg-white flex items-center justify-center px-4 rounded-[8px] z-10">프로젝트 문의</div>
         </a>
+        <div onclick="openModal();" class=" w-14 h-14 bg-white rounded-lg"><img src="/src/svg/icon_cancel.svg" alt=""
+            class="size-full object-cover" class="size-3.5 object-cover"></div>
       </div>
     </div>
 
@@ -157,7 +156,37 @@
       <button href=""><img src="/src/svg/icon_download2-black.svg" alt="" /></button>
     </div>
   </div>
+
+  <div id="category" class="absolute top-8 bottom-12 left-[18px] right-[18px] z-20 bg-[#EEEEEE] font-['pretendard']">
+    <div class="ml-6 mt-16 text-[32px] font-medium flex flex-col gap-12">
+      <div>포트폴리오</div>
+      <div>회사소개</div>
+      <div>슉 페이지 추가?</div>
+      <div class="flex gap-2 h-10 items-center">
+        <div>회사소개서</div>
+        <a href="#"><img src="/src/svg/icon_download2-black.svg" alt=""></a>
+      </div>
+    </div>
+  </div>
 </body>
+
+<style>
+  #category {
+    transform: translateX(100%);
+    display: none;
+  }
+
+  #category.active {
+    transform: translateX(0);
+    display: block;
+  }
+</style>
+
+<script>
+  function openModal() {
+    document.getElementById("category").classList.toggle("active");
+  }
+</script>
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {

@@ -1,159 +1,169 @@
 /* 아래에서 글자 나오기*/
 @keyframes loading-text-stop-1 {
-    0% {
-        transform: translateY(100%);
-        opacity: 0;
-        margin-left: 0;
-        margin-right: 0;
-    }
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-    100% {
-        transform: translateY(0%);
-        opacity: 1;
-        background-color: #fff;
-        margin-left: 48px;
-        margin-right: 48px;
-    }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+    background-color: #fff;
+    margin-left: 48px;
+    margin-right: 48px;
+  }
 }
 
 /*막대로 변하기 */
 @keyframes loading-text-step-2 {
-    0% {
-        transform: translateY(0%);
-        opacity: 1;
-        background-color: #fff;
-        margin-left: 48px;
-        margin-right: 48px;
-    }
+  0% {
+    transform: translateY(0%), rotate(0);
+    opacity: 1;
+    background-color: #fff;
+    margin-left: 48px;
+    margin-right: 48px;
+  }
 
-    100% {
-        width: 4px;
-        height: 40px;
-        margin-left: 40px;
-        margin-right: 40px;
-        background-color: #000;
-    }
+  50% {
+    transform: rotate(-180deg);
+    width: 4px;
+    height: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #000;
+    opacity:50%;
+  }
+
+  100% {
+    transform: rotate(-180deg);
+    width: 4px;
+    height: 4px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #000;
+    opacity: 100%;
+  }
 }
 
 /*큰 박스로 변하기*/
 @keyframes loading-text-step-3 {
-    0% {
-        width: 4px;
-        height: 40px;
-        margin-left: 40px;
-        margin-right: 40px;
-        background-color: #000;
-    }
+  0% {
+    width: 4px;
+    height: 4px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #000;
+  }
 
-    100% {
-        width: 90px;
-        height: 24px;
-        margin-left: 24px;
-        margin-right: 24px;
-        background-color: #000;
-    }
+  100% {
+    width: 90px;
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    background-color: #000;
+  }
 }
 
 /*컨테이너 박스가 커지면서 text2 대체*/
 @keyframes loading-text-step-4 {
-    0% {
-        opacity: 0;
-        width: 0;
-        height: 0;
-        background-color: #000;
-    }
+  0% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    background-color: #000;
+  }
 
-    100% {
-        width: 90px;
-        height: 24px;
-        opacity: 1;
-        background-color: #000;
-        margin-left: -10px;
-    }
-
+  100% {
+    width: 90px;
+    height: 24px;
+    opacity: 1;
+    background-color: #000;
+    margin-left: -10px;
+  }
 }
 
 /*컨테이너 박스가 텍스트를 전체 덮음*/
 @keyframes loading-text-step-5 {
-    0% {
-        width: 90px;
-        height: 24px;
-        opacity: 1;
-        background-color: #000;
-        margin-left: -10px;
-    }
+  0% {
+    width: 90px;
+    height: 24px;
+    opacity: 1;
+    background-color: #000;
+    margin-left: -10px;
+  }
 
-    100% {
-        background-color: #000;
-        width: 435px;
-        height: 48px;
-    }
-
+  100% {
+    background-color: #000;
+    width: 435px;
+    height: 48px;
+  }
 }
 
 /*작은 박스로 변함*/
 @keyframes loading-text-step-6 {
-    0% {
-        width: 435px;
-        height: 48px;
-        background-color: #000;
-    }
+  0% {
+    width: 435px;
+    height: 48px;
+    background-color: #000;
+  }
 
-    100% {
-        width: 64px;
-        height: 64px;
-        background-color: #000;
-    }
+  100% {
+    width: 64px;
+    height: 64px;
+    background-color: #000;
+  }
 }
 
 /*컨테이너 박스로 성장*/
 @keyframes loading-text-step-7 {
-    from {
-        width: 64px;
-        height: 64px;
-        background-color: #000;
-    }
+  from {
+    width: 64px;
+    height: 64px;
+    background-color: #000;
+  }
 
-    to {
-        width: 100%;
-        height: 100%;
-        background-color: #F1F1F1;
-    }
+  to {
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+  }
 }
 
 @keyframes appear {
-    from {
-        opacity: 0;
-        visibility: hidden;
-    }
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
 
-    to {
-        opacity: 1;
-        visibility:visible;
-    }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 @keyframes disappear {
-    from {
-        opacity: 1;
-         visibility: visible;
-    }
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
 
-    to {
-        opacity: 0;
-        visibility: hidden;
-    }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
-@keyframes expandArea{
-    from{
-        width:0;
-        height:0;
-    }
-    to{
-        width:100%;
-        height:100%;
-    }
+@keyframes expandArea {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /* @keyframes fadeIn {

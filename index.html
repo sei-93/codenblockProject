@@ -1,326 +1,359 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>code&block</title>
 
-    <!-- pretendard -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>code&block</title>
 
-    <!-- onset -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet" />
+  <!-- pretendard -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 
-    <!--Asta Sans  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&family=Onest:wght@100..900&display=swap" rel="stylesheet" />
+  <!-- onset -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet" />
 
-    <!-- tailwindcss -->
-    <script src="./js/tailwind.js"></script>
+  <!--Asta Sans  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&family=Onest:wght@100..900&display=swap"
+    rel="stylesheet" />
 
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- tailwindcss -->
+  <script src="./js/tailwind.js"></script>
 
-    <!--CSS-->
-    <link rel="stylesheet" href="./style/main_animation.css" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- timeCalc.js -->
-    <script defer src="./js/timeCalc.js"></script>
-  </head>
+  <!--CSS-->
+  <link rel="stylesheet" href="./style/main_animation.css" />
 
-  <body class="bg-[#fff] leading-[130%] tracking-[-1px] text-sm" style="font-family: 'Asta Sans', sans-serif">
-    <section id="section-1" class="w-screen h-screen overflow-hidden absolute top-0 left-0 z-10">
-      <div class="flex items-center justify-center w-screen h-screen box-border">
-        <div class="flex items-center">
-          <div class="text-1"><img src="./src/svg/text_code.svg" alt="" /></div>
-          <div class="text-2 w-10 h-12 relative">
-            <img src="./src/svg/text_ampersand.svg" alt="" class="size-full object-cover" />
-          </div>
-          <div class="text-3"><img src="./src/svg/text_block.svg" alt="" /></div>
-          <div class="z-10 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-black toContainerBox overflow-hidden">
+  <!-- timeCalc.js -->
+  <script defer src="./js/timeCalc.js"></script>
+</head>
 
-          </div>
+<body class="bg-[#fff] leading-[130%] tracking-[-1px] text-sm" style="font-family: 'Asta Sans', sans-serif">
+  <section id="section-1" class="w-screen h-screen overflow-hidden absolute top-0 left-0 z-10">
+    <div class="flex items-center justify-center w-screen h-screen box-border">
+      <div class="flex items-center">
+        <div class="text-1"><img src="./src/svg/text_code.svg" alt="" /></div>
+        <div class="text-2 w-10 h-12 relative">
+          <img src="./src/svg/text_ampersand.svg" alt="" class="size-full object-cover" />
+        </div>
+        <div class="text-3"><img src="./src/svg/text_block.svg" alt="" /></div>
+        <div
+          class="z-10 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-black toContainerBox overflow-hidden">
         </div>
       </div>
-    </section>
-    <section id="section-2" class="bg-[#F1F1F1] relative w-[calc(100vw-32px)] h-[calc(100vh-48px)] mx-auto mt-4 mb-2 overflow-hidden">
-      <div class="ml-6 mt-[40px] block md:hidden">
-        <div class="flex items-center gap-8 md:hidden strip-track">
-          <img src="/src/svg/strip-1.svg" alt="" />
-          <img src="/src/svg/strip-2.svg" alt="" />
-          <img src="/src/svg/strip-3.svg" alt="" />
-          <img src="/src/svg/strip-4.svg" alt="" />
-          <img src="/src/svg/strip-1.svg" alt="" />
-          <img src="/src/svg/strip-2.svg" alt="" />
-          <img src="/src/svg/strip-3.svg" alt="" />
-          <img src="/src/svg/strip-4.svg" alt="" />
-        </div>
-        <div class="text-sm text-[#121212] mt-8">
-          코드앤블록은 카페24 기반 이커머스에 특화된
-          <br />
-          에이전시로 기술적 완성도와 경험의 깊이를
-          <br />
-          더해 실질적이고 쓰이는 결과를 만듭니다.
-        </div>
+    </div>
+  </section>
+  <section id="section-2"
+    class="bg-[#F1F1F1] relative w-[calc(100vw-32px)] h-[calc(100vh-48px)] mx-auto mt-4 mb-2 overflow-hidden hidden">
+    <div class="ml-6 mt-[40px] block md:hidden">
+      <div class="flex items-center gap-8 md:hidden strip-track">
+        <img src="/src/svg/strip-1.svg" alt="" />
+        <img src="/src/svg/strip-2.svg" alt="" />
+        <img src="/src/svg/strip-3.svg" alt="" />
+        <img src="/src/svg/strip-4.svg" alt="" />
+        <img src="/src/svg/strip-1.svg" alt="" />
+        <img src="/src/svg/strip-2.svg" alt="" />
+        <img src="/src/svg/strip-3.svg" alt="" />
+        <img src="/src/svg/strip-4.svg" alt="" />
       </div>
+      <div class="text-sm text-[#121212] mt-8">
+        코드앤블록은 카페24 기반 이커머스에 특화된
+        <br />
+        에이전시로 기술적 완성도와 경험의 깊이를
+        <br />
+        더해 실질적이고 쓰이는 결과를 만듭니다.
+      </div>
+    </div>
 
-      <style>
-        .strip-track {
-          display: inline-flex;
-          animation: strip-move 20s linear infinite;
+    <style>
+      .strip-track {
+        display: inline-flex;
+        animation: strip-move 20s linear infinite;
+      }
+
+      @keyframes strip-move {
+        0% {
+          transform: translateX(0);
         }
-        @keyframes strip-move {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-      </style>
 
-      <div id="floatingBox">
-        <div class="absolute top-[30px] left-6 gap-[78px] z-10 hidden md:flex">
-          <div class="flex gap-2 h-[18px] items-center mt-[1px]">
-            <img src="/src/svg/icon_circle-gray.svg" alt="" class="w-1.5 h-1.5" />
-            <div class="font-[Onest] text-sm font-semibold">SEOUL, KR</div>
-            <div id="timeBox" class="font-[Onest] flex gap-1 text-[#464646]"></div>
-          </div>
-        </div>
-        <div class="absolute left-[6.3%] top-[13.5%] z-10 hidden md:flex"><img src="/src/svg/text_whatFitsStays.svg" alt="" /></div>
-      </div>
-      <div id="mainBanner" class="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
-        <div class="swiper pt-10">
-          <div class="portfolioLinkBox min-w-fit w-[37.7%] flex p-2 justify-between mb-3 mx-auto bg-[#E1E2E4E5] rounded-lg">
-            <div class="flex items-center">
-              <div class="w-10 h-10 rounded-lg mr-3"><img src="./src/svg/logo_youngranu.svg" alt="" /></div>
-              <div class="mr-1.5">영라뉴 웹사이트 리뉴얼</div>
-              <div class="text-[#646464]">@CAFE24</div>
-            </div>
-            <div class="flex items-center">
-              <a href="#" class="flex items-center justify-center w-10 h-10 rounded-full overflow-hidden hover:bg-[#cfd0d1] transition-all duration-300"><img src="./src/svg/icon_download.svg" alt="" /></a>
-              <a href="#" class="swiper-btn-prev flex items-center justify-center w-10 h-10 rounded-full overflow-hidden hover:bg-[#cfd0d1] transition-all duration-300"><img src="./src/svg/icon_swiper-prev.svg" alt="" /></a>
-              <a href="#" class="swiper-btn-next flex items-center justify-center w-10 h-10 rounded-full overflow-hidden hover:bg-[#cfd0d1] transition-all duration-300"><img src="./src/svg/icon_swiper-next.svg" alt="" /></a>
-              <div class="group">
-                <a href="#" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-[#cfd0d1] transition-all duration-300 relative group"><img src="./src/svg/icon_newTab.svg" alt="" /></a>
-                <a class="block -ml-1 absolute top-3 py-1 px-1.5 bg-[#1111111A] text-nowrap text-[#464646] text-xs rounded-[4px] transition-all duration-300 group-hover:opacity-100 opacity-0 group-hover:-translate-y-0 translate-y-10">바로가기</a>
-              </div>
-            </div>
-          </div>
-          <!-- !w-[24.5%] [&.swiper-slide-active]:!w-[37.4%] -->
-          <div class="swiper-wrapper">
-            <div class="swiper-slide w-auto h-auto md:h-[400px] group rounded-[4px] overflow-hidden">
-              <a href="#" class="block transition-[height] duration-500 h-[65.5%] group-[&.swiper-slide-active]:h-full md:aspect-[16/9] rounded-sm"><img src="/src/item-1.png" alt="" class="size-full object-cover" /></a>
-            </div>
-          </div>
-        </div>
-        <div class="companyHistory mt-4 mx-12 h-20 bg-[url('./src/svg/bg-companyHistory.svg')] bg-center bg-no-repeat"></div>
-      </div>
-      <div class="text-sm text-[#121212] absolute left-[6.3%] bottom-[26%] z-10 hidden md:block">
-        <div class="">
-          코드앤블록은 카페24 기반 이커머스에 특화된
-          <br />
-          에이전시로 기술적 완성도와 경험의 깊이를
-          <br />
-          더해 실질적이고 쓰이는 결과를 만듭니다.
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+    </style>
+
+    <div id="floatingBox">
+      <div class="absolute top-[30px] left-6 gap-[78px] z-10 hidden md:flex">
+        <div class="flex gap-2 h-[18px] items-center mt-[1px]">
+          <img src="/src/svg/icon_circle-gray.svg" alt="" class="w-1.5 h-1.5" />
+          <div class="font-[Onest] text-sm font-semibold">SEOUL, KR</div>
+          <div id="timeBox" class="font-[Onest] flex gap-1 text-[#464646]"></div>
         </div>
       </div>
-    </section>
-    <div class="boxes bottom-8 flex items-center justify-center z-10 pointer-events-auto">
-      <div class="box bg-black absolute top-4 left-4 w-4 h-4"></div>
-      <div class="box bg-black absolute top-4 right-4 w-4 h-4"></div>
-      <div class="box bg-black absolute bottom-8 left-4 w-4 h-4"></div>
-      <div class="box bg-black absolute bottom-8 right-4 w-4 h-4"></div>
+      <div class="absolute left-[6.3%] top-[13.5%] z-10 hidden md:flex"><img src="/src/svg/text_whatFitsStays.svg"
+          alt="" /></div>
     </div>
-    <div id="footer" class="flex justify-between mx-4">
-      <a href="/index.html"><img src="/src/svg/text_codenblock.svg" alt="" /></a>
-      <div class="items-center gap-2 hidden md:flex">
-        <a href="">codenblock@gmail.com</a>
-        <div class="w-1 h-1 bg-[#E1E2E4]"></div>
-        <a href="#" class="flex gap-1.5 items-center">
-          <div class="text-sm font-medium flex">회사소개서</div>
-          <div class="w-[18px] h-[18px]"><img src="/src/svg/icon_download2-black.svg" alt="" class="size-full object-cover" /></div>
-        </a>
+    <div id="mainBanner" class="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+      <div class="swiper pt-10">
+        <div
+          class="portfolioLinkBox min-w-fit w-[37.7%] flex p-2 justify-between mb-3 mx-auto bg-[#E1E2E4E5] rounded-lg">
+          <div class="flex items-center">
+            <div class="w-10 h-10 rounded-lg mr-3"><img src="./src/svg/logo_youngranu.svg" alt="" /></div>
+            <div class="mr-1.5">영라뉴 웹사이트 리뉴얼</div>
+            <div class="text-[#646464]">@CAFE24</div>
+          </div>
+          <div class="flex items-center">
+            <a href="#"
+              class="flex items-center justify-center w-10 h-10 rounded-full overflow-hidden hover:bg-[#cfd0d1] transition-all duration-300"><img
+                src="./src/svg/icon_download.svg" alt="" /></a>
+            <a href="#"
+              class="swiper-btn-prev flex items-center justify-center w-10 h-10 rounded-full overflow-hidden hover:bg-[#cfd0d1] transition-all duration-300"><img
+                src="./src/svg/icon_swiper-prev.svg" alt="" /></a>
+            <a href="#"
+              class="swiper-btn-next flex items-center justify-center w-10 h-10 rounded-full overflow-hidden hover:bg-[#cfd0d1] transition-all duration-300"><img
+                src="./src/svg/icon_swiper-next.svg" alt="" /></a>
+            <div class="group">
+              <a href="#"
+                class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-[#cfd0d1] transition-all duration-300 relative group"><img
+                  src="./src/svg/icon_newTab.svg" alt="" /></a>
+              <a
+                class="block -ml-1 absolute top-3 py-1 px-1.5 bg-[#1111111A] text-nowrap text-[#464646] text-xs rounded-[4px] transition-all duration-300 group-hover:opacity-100 opacity-0 group-hover:-translate-y-0 translate-y-10">바로가기</a>
+            </div>
+          </div>
+        </div>
+        <!-- !w-[24.5%] [&.swiper-slide-active]:!w-[37.4%] -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide w-auto h-auto md:h-[400px] group rounded-[4px] overflow-hidden">
+            <a href="#"
+              class="block transition-[height] duration-500 h-[65.5%] group-[&.swiper-slide-active]:h-full md:aspect-[16/9] rounded-sm"><img
+                src="/src/item-1.png" alt="" class="size-full object-cover" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="companyHistory mt-4 mx-12 h-20 bg-[url('./src/svg/bg-companyHistory.svg')] bg-center bg-no-repeat">
       </div>
     </div>
-    <div id="category" class="absolute top-8 bottom-12 left-[16px] right-[16px] z-20 bg-[#EEEEEE] font-['pretendard']">
-      <div class="ml-6 mt-16 text-[32px] font-medium flex flex-col gap-12">
-        <div>포트폴리오</div>
-        <div>회사소개</div>
-        <div>슉 페이지 추가?</div>
-        <a class="flex gap-2 h-10 items-center">
-          <div>회사소개서</div>
-          <div href="#" class="ml-2"><img src="/src/svg/icon_download2-black.svg" alt="" /></div>
-        </a>
-      </div>
-      <div class="ml-6 mt-[17.8%] text-[#999] text-sm font-medium">
-        서울, 강남구 대치동, 88-88,
+    <div class="text-sm text-[#121212] absolute left-[6.3%] bottom-[26%] z-10 hidden md:block">
+      <div class="">
+        코드앤블록은 카페24 기반 이커머스에 특화된
         <br />
-        3층 코드앤블록
+        에이전시로 기술적 완성도와 경험의 깊이를
         <br />
-        codenblock@gmail.com
-        <br />
-        02.1111.1111
+        더해 실질적이고 쓰이는 결과를 만듭니다.
       </div>
     </div>
-    <div id="linkBox" class="absolute flex-shrink-0 min-w-fit bottom-[72px] h-[72px] left-1/2 -translate-x-1/2 p-2 flex gap-2 items-center bg-[#E1E2E4E5] rounded-[12px] z-30">
-      <a href="#" class="block w-14 h-14"><img src="./src/svg/icon_shoooook.svg" alt="" class="size-full object-cover" /></a>
-      <a href="#" id="portfolio" class="items-center justify-center min-w-[56px] h-full p-2 relative hidden md:flex">포트폴리오</a>
-      <a href="#" class="items-center justify-center min-w-[45px] h-full p-2 hidden md:flex">회사소개</a>
-      <a href="#" class="text-nowrap flex items-center justify-center min-w-[70px] h-full overflow-hidden relative p-[1px] rounded-[8px]">
-        <div class="absolute aspect-square w-[120px] rounded-full animate-spin-slow bg-[conic-gradient(#767676,#F1F1F1,#999999,#767676,#F1F1F1,#999999)]"></div>
-        <div class="w-full h-full bg-white flex items-center justify-center px-4 rounded-[8px] z-10">프로젝트 문의</div>
+  </section>
+  <div class="boxes bottom-8 flex items-center justify-center z-10 pointer-events-auto hidden">
+    <div class="box bg-black absolute top-4 left-4 w-4 h-4"></div>
+    <div class="box bg-black absolute top-4 right-4 w-4 h-4"></div>
+    <div class="box bg-black absolute bottom-8 left-4 w-4 h-4"></div>
+    <div class="box bg-black absolute bottom-8 right-4 w-4 h-4"></div>
+  </div>
+  <div id="footer" class="flex justify-between mx-4 hidden">
+    <a href="/index.html"><img src="/src/svg/text_codenblock.svg" alt="" /></a>
+    <div class="items-center gap-2 hidden md:flex">
+      <a href="">codenblock@gmail.com</a>
+      <div class="w-1 h-1 bg-[#E1E2E4]"></div>
+      <a href="#" class="flex gap-1.5 items-center">
+        <div class="text-sm font-medium flex">회사소개서</div>
+        <div class="w-[18px] h-[18px]"><img src="/src/svg/icon_download2-black.svg" alt=""
+            class="size-full object-cover" /></div>
       </a>
-      <div id="categoryToggleBox" onclick="openModal();" class="w-14 h-14 bg-white rounded-lg flex items-center justify-center cursor-pointer md:hidden">
-        <img src="/src/svg/icon_category.svg" alt="" class="block w-4 h-3" />
-        <img src="/src/svg/icon_cancel.svg" alt="" class="" />
-      </div>
     </div>
-  </body>
+  </div>
+  <div id="category" class="absolute top-8 bottom-12 left-[16px] right-[16px] z-20 bg-[#EEEEEE] font-['pretendard']">
+    <div class="ml-6 mt-16 text-[32px] font-medium flex flex-col gap-12">
+      <div>포트폴리오</div>
+      <div>회사소개</div>
+      <div>슉 페이지 추가?</div>
+      <a class="flex gap-2 h-10 items-center">
+        <div>회사소개서</div>
+        <div href="#" class="ml-2"><img src="/src/svg/icon_download2-black.svg" alt="" /></div>
+      </a>
+    </div>
+    <div class="ml-6 mt-[17.8%] text-[#999] text-sm font-medium">
+      서울, 강남구 대치동, 88-88,
+      <br />
+      3층 코드앤블록
+      <br />
+      codenblock@gmail.com
+      <br />
+      02.1111.1111
+    </div>
+  </div>
+  <div id="linkBox"
+    class="absolute flex-shrink-0 min-w-fit bottom-[72px] h-[72px] left-1/2 -translate-x-1/2 p-2 flex gap-2 items-center bg-[#E1E2E4E5] rounded-[12px] z-30 hidden">
+    <a href="#" class="block w-14 h-14"><img src="./src/svg/icon_shoooook.svg" alt=""
+        class="size-full object-cover" /></a>
+    <a href="#" id="portfolio"
+      class="items-center justify-center min-w-[56px] h-full p-2 relative hidden md:flex">포트폴리오</a>
+    <a href="#" class="items-center justify-center min-w-[45px] h-full p-2 hidden md:flex">회사소개</a>
+    <a href="#"
+      class="text-nowrap flex items-center justify-center min-w-[70px] h-full overflow-hidden relative p-[1px] rounded-[8px]">
+      <div
+        class="absolute aspect-square w-[120px] rounded-full animate-spin-slow bg-[conic-gradient(#767676,#F1F1F1,#999999,#767676,#F1F1F1,#999999)]">
+      </div>
+      <div class="w-full h-full bg-white flex items-center justify-center px-4 rounded-[8px] z-10">프로젝트 문의</div>
+    </a>
+    <div id="categoryToggleBox" onclick="openModal();"
+      class="w-14 h-14 bg-white rounded-lg flex items-center justify-center cursor-pointer md:hidden">
+      <img src="/src/svg/icon_category.svg" alt="" class="block w-4 h-3" />
+      <img src="/src/svg/icon_cancel.svg" alt="" class="" />
+    </div>
+  </div>
+</body>
 
-  <style>
-    #category {
-      display: none;
+<style>
+  #category {
+    display: none;
+  }
+
+  #category.active {
+    display: block;
+  }
+
+  #categoryToggleBox.active img:first-child {
+    display: none;
+  }
+
+  #categoryToggleBox img:first-child {
+    display: block;
+  }
+
+  #categoryToggleBox.active img:last-child {
+    display: block;
+  }
+
+  #categoryToggleBox img:last-child {
+    display: none;
+  }
+</style>
+
+<!-- 카테고리 팝업 -->
+<script>
+  function openModal() {
+    document.getElementById("category").classList.toggle("active");
+    document.getElementById("categoryToggleBox").classList.toggle("active");
+  }
+</script>
+
+<!-- 스와이퍼 옵션 -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const wrapper = mainBanner.querySelector(".swiper-wrapper");
+    const slide = wrapper.querySelector(".swiper-slide"); // 첫 번째 슬라이드
+
+    for (let i = 0; i < 20; i++) {
+      const clone = slide.cloneNode(true); // 깊은 복사
+      wrapper.appendChild(clone);
     }
 
-    #category.active {
-      display: block;
-    }
-
-    #categoryToggleBox.active img:first-child {
-      display: none;
-    }
-
-    #categoryToggleBox img:first-child {
-      display: block;
-    }
-
-    #categoryToggleBox.active img:last-child {
-      display: block;
-    }
-
-    #categoryToggleBox img:last-child {
-      display: none;
-    }
-  </style>
-
-  <script>
-    function openModal() {
-      document.getElementById("category").classList.toggle("active");
-      document.getElementById("categoryToggleBox").classList.toggle("active");
-    }
-  </script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const wrapper = mainBanner.querySelector(".swiper-wrapper");
-      const slide = wrapper.querySelector(".swiper-slide"); // 첫 번째 슬라이드
-
-      for (let i = 0; i < 20; i++) {
-        const clone = slide.cloneNode(true); // 깊은 복사
-        wrapper.appendChild(clone);
-      }
-
-      const swiper = new Swiper("#mainBanner .swiper", {
-        slidesPerView: 1.2,
-        spaceBetween: 8,
-        loop: true,
-        centeredSlides: true,
-        speed: 1000,
-        autoplay: false,
-        navigation: {
-          nextEl: "#mainBanner .swiper-btn-next",
-          prevEl: "#mainBanner .swiper-btn-prev",
+    const swiper = new Swiper("#mainBanner .swiper", {
+      slidesPerView: 1.2,
+      spaceBetween: 8,
+      loop: true,
+      centeredSlides: true,
+      speed: 1000,
+      autoplay: false,
+      navigation: {
+        nextEl: "#mainBanner .swiper-btn-next",
+        prevEl: "#mainBanner .swiper-btn-prev",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: "auto",
         },
-        breakpoints: {
-          768: {
-            slidesPerView: "auto",
-          },
-        },
-      });
-
-      // 로드된 후 3초 뒤 실행
-      setTimeout(() => {
-        swiper.slideToLoop(10, 2000, true);
-        setTimeout(() => {
-          swiper.autoplay.stop();
-        }, 2100);
-      }, 2500);
+      },
     });
-  </script>
 
-  <style>
-    @keyframes spin-slow {
-      0% {
-        transform: rotate(0deg);
-      }
+    // 로드된 후 3초 뒤 실행
+    setTimeout(() => {
+      swiper.slideToLoop(10, 2000, true);
+      setTimeout(() => {
+        swiper.autoplay.stop();
+      }, 2100);
+    }, 2500);
+  });
+</script>
 
-      100% {
-        transform: rotate(360deg);
-      }
+<!-- 버튼 border 회전 -->
+<style>
+  @keyframes spin-slow {
+    0% {
+      transform: rotate(0deg);
     }
 
-    #contentHeader,
-    .boxes {
-      animation: disappear 0.3s forwards, appear 0.3s 2s forwards;
+    100% {
+      transform: rotate(360deg);
     }
+  }
 
-    .animate-spin-slow {
-      animation: spin-slow 1.5s linear infinite;
-    }
+  #contentHeader,
+  .boxes {
+    animation: disappear 0.3s forwards, appear 0.3s 2s forwards;
+  }
 
-    .text-2 {
-      position: relative;
-      animation: loading-text-stop-1 0.3s, loading-text-step-2 0.5s 0.3s, loading-text-step-3 0.3s 0.8s, loading-text-step-4 0.4s 1.1s, loading-text-step-5 0.4s 1.5s;
-    }
+  .animate-spin-slow {
+    animation: spin-slow 1.5s linear infinite;
+  }
 
-    .text-1,
-    .text-3 {
-      animation: disappear 0.3s 1.3s forwards;
-    }
+  .text-2 {
+    position: relative;
+    animation: loading-text-stop-1 0.3s forwards, loading-text-step-2 0.5s 0.3s forwards, loading-text-step-3 0.3s 0.6s forwards, disappear 0.1s 0.9s forwards;
+  }
 
-    .text-2 img {
-      animation: appear 0.6s;
-    }
-/* 
-    .toContainerBox {
-      animation: appear 0.6s, loading-text-step-4 0.4s 0.8s, loading-text-step-5 0.4s 1.1s, loading-text-step-6 0.4s 1.8s, loading-text-step-7 0.4s 2.2s;
-    } */
+  .toContainerBox {
+    animation: loading-text-step-4 0.2s 0.9s forwards, loading-text-step-5 0.4s 1s forwards, loading-text-step-6 0.3s 1.5s forwards, loading-text-step-7 0.5s 1.8s forwards;
+  }
 
-    #section-1 {
-      animation: disappear 0.3s 2.4s forwards;
-    }
+  .text-1,
+  .text-3 {
+    animation: disappear 0.3s 1.3s forwards;
+  }
 
-    #section-2 {
-      animation: disappear 0s forwards, appear 0.3s 2.5s ease-out forwards;
-    }
+  .text-2 img {
+    animation: appear 0.3s, disappear 0.3s 0.3s forwards;
+  }
 
-    #footer {
-      animation: disappear 0s forwards, appear 0.3s 2.5s ease-out forwards;
-    }
 
-    #floatingBox,
-    #linkBox {
-      animation: disappear 0s forwards, appear 0.3s 2.7s ease-out forwards;
-    }
+  #section-1 {
+    animation: disappear 0.3s 2.4s forwards;
+  }
 
-    #portfolio::after {
-      content: "21";
-      border-radius: 100px;
-      position: absolute;
-      top: -2px;
-      right: 0;
-      color: white;
-      font-size: 12px;
-      font-family: "Asta Sans";
-      background: #020f2333;
-      padding: 2px 8px;
-    }
-  </style>
+  #section-2 {
+    animation: disappear 0s forwards, appear 0.3s 2.5s ease-out forwards;
+  }
+
+  #footer {
+    animation: disappear 0s forwards, appear 0.3s 2.5s ease-out forwards;
+  }
+
+  #floatingBox,
+  #linkBox {
+    animation: disappear 0s forwards, appear 0.3s 2.7s ease-out forwards;
+  }
+
+  #portfolio::after {
+    content: "21";
+    border-radius: 100px;
+    position: absolute;
+    top: -2px;
+    right: 0;
+    color: white;
+    font-size: 12px;
+    font-family: "Asta Sans";
+    background: #020f2333;
+    padding: 2px 8px;
+  }
+</style>
+
 </html>

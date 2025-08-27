@@ -1,4 +1,3 @@
-/* 아래에서 글자 나오기*/
 @keyframes loading-text-stop-1 {
   0% {
     transform: translateY(100%);
@@ -16,7 +15,6 @@
   }
 }
 
-/*막대로 변하기 */
 @keyframes loading-text-step-2 {
   0% {
     transform: translateY(0%), rotate(0);
@@ -26,18 +24,16 @@
     margin-right: 48px;
   }
 
-  50% {
-    transform: rotate(-180deg);
-    width: 4px;
-    height: 40px;
+  80% {
+    transform: rotate(180deg);
     margin-left: 40px;
     margin-right: 40px;
     background-color: #000;
-    opacity:50%;
+    opacity: 50%;
   }
 
   100% {
-    transform: rotate(-180deg);
+    transform: rotate(180deg);
     width: 4px;
     height: 4px;
     margin-left: 40px;
@@ -47,7 +43,6 @@
   }
 }
 
-/*큰 박스로 변하기*/
 @keyframes loading-text-step-3 {
   0% {
     width: 4px;
@@ -58,51 +53,74 @@
   }
 
   100% {
-    width: 90px;
-    height: 24px;
-    margin-left: 24px;
-    margin-right: 24px;
+    width: 16px;
+    height: 16px;
+    margin-left: 40px;
+    margin-right: 40px;
     background-color: #000;
   }
 }
 
-/*컨테이너 박스가 커지면서 text2 대체*/
 @keyframes loading-text-step-4 {
   0% {
-    opacity: 0;
-    width: 0;
-    height: 0;
-    background-color: #000;
+    width: 16px;
+    height: 16px;
+    margin-left: -6px;
   }
-
   100% {
-    width: 90px;
-    height: 24px;
-    opacity: 1;
-    background-color: #000;
-    margin-left: -10px;
+    width: 40px;
+    height: 40px;
+    margin-left: -6px;
   }
 }
 
-/*컨테이너 박스가 텍스트를 전체 덮음*/
 @keyframes loading-text-step-5 {
   0% {
-    width: 90px;
-    height: 24px;
-    opacity: 1;
-    background-color: #000;
-    margin-left: -10px;
+    width: 40px;
+    height: 40px;
+    margin-left: -6px;
   }
-
+  50% {
+    width: 480px;
+    height: 48px;
+    margin-left: 0;
+  }
   100% {
-    background-color: #000;
+    width: 435px;
+    height: 48px;
+    margin-left: 0;
+  }
+}
+
+@keyframes loading-text-step-6 {
+  0% {
     width: 435px;
     height: 48px;
   }
+
+  100% {
+    background-color: #000;
+    width: 40px;
+    height: 40px;
+  }
 }
 
-/*작은 박스로 변함*/
-@keyframes loading-text-step-6 {
+@keyframes loading-text-step-7{
+  0% {
+    background-color: #000;
+    width: 40px;
+    height: 40px;
+    opacity:1;
+  }
+  100%{
+    width:calc(100vw - 32px);
+    height:calc(100vh - 48px);
+    background-color: #f1f1f1;
+    opacity:1;
+  }
+}
+
+/* @keyframes loading-text-step-6 {
   0% {
     width: 435px;
     height: 48px;
@@ -116,7 +134,7 @@
   }
 }
 
-/*컨테이너 박스로 성장*/
+
 @keyframes loading-text-step-7 {
   from {
     width: 64px;
@@ -129,7 +147,7 @@
     height: 100%;
     background-color: #f1f1f1;
   }
-}
+} */
 
 @keyframes appear {
   from {
@@ -165,118 +183,3 @@
     height: 100%;
   }
 }
-
-/* @keyframes fadeIn {
-        0% {
-            transform: translateY(100%);
-            opacity: 0;
-            margin-left: 0;
-            margin-right: 0;
-        }
-
-        10%,
-        15% {
-            transform: translateY(0%);
-            opacity: 1;
-            background-color: #fff;
-            margin-left: 48px;
-            margin-right: 48px;
-        }
-
-        25%,
-        30% {
-            width: 4px;
-            height: 40px;
-            margin-left: 40px;
-            margin-right: 40px;
-            background-color: #000;
-        }
-
-        40%,
-        45% {
-            width: 90px;
-            height: 24px;
-            margin-left: 24px;
-            margin-right: 24px;
-            background-color: #000;
-            opacity: 1;
-        }
-
-        46%,
-        100% {
-            width: 90px;
-            height: 24px;
-            opacity: 0;
-            margin-left: 24px;
-            margin-right: 24px;
-        }
-
-    }
-
-    @keyframes fadeIn2 {
-        43% {
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
-
-        44% {
-            background-color: #000;
-            width: 90px;
-            height: 24px;
-            opacity: 1;
-            margin-left: -10px;
-        }
-
-        55%,
-        60% {
-            background-color: #000;
-            width: 435px;
-            height: 48px;
-        }
-
-        70%,
-        80% {
-            width: 64px;
-            height: 64px;
-            background-color: #000;
-        }
-
-        100% {
-            width:calc(100% - 32px);
-            height:calc(100% - 48px);
-            background-color: #F1F1F1;
-        }
-    }
-
-    @keyframes disappear {
-        0% {
-            opacity: 1;
-        }
-
-        60% {
-            opacity: 1;
-        }
-
-        61% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 0;
-        }
-    }
-
-    @keyframes appear {
-        0% {
-            opacity: 0;
-        }
-
-        90% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    } */

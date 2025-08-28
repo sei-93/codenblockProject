@@ -37,7 +37,7 @@
   <script defer src="./js/timeCalc.js"></script>
 </head>
 
-<body class="bg-[#fff] leading-[130%] tracking-[-1px] text-sm" style="font-family: 'Asta Sans', sans-serif">
+<body class="bg-[#fff] leading-[130%] tracking-[-1px] text-sm relative" style="font-family: 'Asta Sans', sans-serif">
   <section id="section-1" class="w-screen h-screen overflow-hidden absolute top-0 left-0 z-10">
     <div class="flex items-center justify-center w-screen h-screen box-border">
       <div class="flex items-center">
@@ -46,118 +46,116 @@
           <img src="./src/svg/text_ampersand.svg" alt="" class="size-full object-cover" />
         </div>
         <div class="text-3"><img src="./src/svg/text_block.svg" alt="" /></div>
-        <div
-          class="z-10 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-black toContainerBox overflow-hidden">
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="section-2"
-    class="bg-[#F1F1F1] relative w-[calc(100vw-32px)] h-[calc(100vh-48px)] mx-auto mt-4 mb-2 overflow-hidden hidden">
-    <div class="ml-6 mt-[40px] block md:hidden">
-      <div class="flex items-center gap-8 md:hidden strip-track">
-        <img src="/src/svg/strip-1.svg" alt="" />
-        <img src="/src/svg/strip-2.svg" alt="" />
-        <img src="/src/svg/strip-3.svg" alt="" />
-        <img src="/src/svg/strip-4.svg" alt="" />
-        <img src="/src/svg/strip-1.svg" alt="" />
-        <img src="/src/svg/strip-2.svg" alt="" />
-        <img src="/src/svg/strip-3.svg" alt="" />
-        <img src="/src/svg/strip-4.svg" alt="" />
-      </div>
-      <div class="text-sm text-[#121212] mt-8">
-        코드앤블록은 카페24 기반 이커머스에 특화된
-        <br />
-        에이전시로 기술적 완성도와 경험의 깊이를
-        <br />
-        더해 실질적이고 쓰이는 결과를 만듭니다.
-      </div>
-    </div>
-
-    <style>
-      .strip-track {
-        display: inline-flex;
-        animation: strip-move 20s linear infinite;
-      }
-
-      @keyframes strip-move {
-        0% {
-          transform: translateX(0);
-        }
-
-        100% {
-          transform: translateX(-50%);
-        }
-      }
-    </style>
-
-    <div id="floatingBox">
-      <div class="absolute top-[30px] left-6 gap-[78px] z-10 hidden md:flex">
-        <div class="flex gap-2 h-[18px] items-center mt-[1px]">
-          <img src="/src/svg/icon_circle-gray.svg" alt="" class="w-1.5 h-1.5" />
-          <div class="font-[Onest] text-sm font-semibold">SEOUL, KR</div>
-          <div id="timeBox" class="font-[Onest] flex gap-1 text-[#464646]"></div>
-        </div>
-      </div>
-      <div class="absolute left-[6.3%] top-[13.5%] z-10 hidden md:flex"><img src="/src/svg/text_whatFitsStays.svg"
-          alt="" /></div>
-    </div>
-    <div id="mainBanner" class="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
-      <div class="swiper pt-10">
-        <div
-          class="portfolioLinkBox min-w-fit w-[37.7%] flex p-2 justify-between mb-3 mx-auto bg-[#E1E2E4E5] rounded-lg">
-          <div class="flex items-center">
-            <div class="w-10 h-10 rounded-lg mr-3"><img src="./src/svg/logo_youngranu.svg" alt="" /></div>
-            <div class="mr-1.5">영라뉴 웹사이트 리뉴얼</div>
-            <div class="text-[#646464]">@CAFE24</div>
-          </div>
-          <div class="flex items-center">
-            <a href="#"
-              class="flex items-center justify-center w-10 h-10 rounded-full overflow-hidden hover:bg-[#cfd0d1] transition-all duration-300"><img
-                src="./src/svg/icon_download.svg" alt="" /></a>
-            <a href="#"
-              class="swiper-btn-prev flex items-center justify-center w-10 h-10 rounded-full overflow-hidden hover:bg-[#cfd0d1] transition-all duration-300"><img
-                src="./src/svg/icon_swiper-prev.svg" alt="" /></a>
-            <a href="#"
-              class="swiper-btn-next flex items-center justify-center w-10 h-10 rounded-full overflow-hidden hover:bg-[#cfd0d1] transition-all duration-300"><img
-                src="./src/svg/icon_swiper-next.svg" alt="" /></a>
-            <div class="group">
-              <a href="#"
-                class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-[#cfd0d1] transition-all duration-300 relative group"><img
-                  src="./src/svg/icon_newTab.svg" alt="" /></a>
-              <a
-                class="block -ml-1 absolute top-3 py-1 px-1.5 bg-[#1111111A] text-nowrap text-[#464646] text-xs rounded-[4px] transition-all duration-300 group-hover:opacity-100 opacity-0 group-hover:-translate-y-0 translate-y-10">바로가기</a>
+        <div class="z-10 absolute left-4 top-4 bg-black toContainerBox overflow-hidden">
+          <div class="ml-6 mt-[40px] block md:hidden">
+            <div class="flex items-center gap-8 md:hidden strip-track">
+              <img src="/src/svg/strip-1.svg" alt="" />
+              <img src="/src/svg/strip-2.svg" alt="" />
+              <img src="/src/svg/strip-3.svg" alt="" />
+              <img src="/src/svg/strip-4.svg" alt="" />
+              <img src="/src/svg/strip-1.svg" alt="" />
+              <img src="/src/svg/strip-2.svg" alt="" />
+              <img src="/src/svg/strip-3.svg" alt="" />
+              <img src="/src/svg/strip-4.svg" alt="" />
+            </div>
+            <div class="text-sm text-[#121212] mt-8">
+              코드앤블록은 카페24 기반 이커머스에 특화된
+              <br />
+              에이전시로 기술적 완성도와 경험의 깊이를
+              <br />
+              더해 실질적이고 쓰이는 결과를 만듭니다.
             </div>
           </div>
-        </div>
-        <!-- !w-[24.5%] [&.swiper-slide-active]:!w-[37.4%] -->
-        <div class="swiper-wrapper">
-          <div class="swiper-slide w-auto h-auto md:h-[400px] group rounded-[4px] overflow-hidden">
-            <a href="#"
-              class="block transition-[height] duration-500 h-[65.5%] group-[&.swiper-slide-active]:h-full md:aspect-[16/9] rounded-sm"><img
-                src="/src/item-1.png" alt="" class="size-full object-cover" /></a>
+          <div id="floatingBox">
+            <div class="text-sm text-[#121212] absolute left-[6.3%] bottom-[26%] z-10 hidden md:block">
+              <div class="">
+                코드앤블록은 카페24 기반 이커머스에 특화된
+                <br />
+                에이전시로 기술적 완성도와 경험의 깊이를
+                <br />
+                더해 실질적이고 쓰이는 결과를 만듭니다.
+              </div>
+            </div>
+            <div class="absolute top-[30px] left-6 gap-[78px] z-10 hidden md:flex">
+              <div class="flex gap-2 h-[18px] items-center mt-[1px]">
+                <img src="/src/svg/icon_circle-gray.svg" alt="" class="w-1.5 h-1.5" />
+                <div class="font-[Onest] text-sm font-semibold">SEOUL, KR</div>
+                <div id="timeBox" class="font-[Onest] flex gap-1 text-[#464646]"></div>
+              </div>
+            </div>
+            <div class="absolute left-[6.3%] top-[13.5%] z-10 hidden md:flex"><img src="/src/svg/text_whatFitsStays.svg"
+                alt="" /></div>
           </div>
+          <div id="mainBanner" class="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+            <div class="swiper pt-10 pb-20">
+              <div id="portfolioLinkBox"
+                class="portfolioLinkBox min-w-fit w-[37.7%] flex p-2 justify-between mb-3 mx-auto bg-[#E1E2E4E5] rounded-lg">
+                <div class="flex items-center">
+                  <div class="w-10 h-10 rounded-lg mr-3"><img src="./src/svg/logo_youngranu.svg" alt="" /></div>
+                  <div class="mr-1.5">영라뉴 웹사이트 리뉴얼</div>
+                  <div class="text-[#646464]">@CAFE24</div>
+                </div>
+                <div class="flex items-center">
+                  <a href="#"
+                    class="flex items-center justify-center w-10 h-10 rounded-full overflow-hidden hover:bg-[#cfd0d1] transition-all duration-300"><img
+                      src="./src/svg/icon_download.svg" alt="" /></a>
+                  <a href="#"
+                    class="swiper-btn-prev flex items-center justify-center w-10 h-10 rounded-full overflow-hidden hover:bg-[#cfd0d1] transition-all duration-300"><img
+                      src="./src/svg/icon_swiper-prev.svg" alt="" /></a>
+                  <a href="#"
+                    class="swiper-btn-next flex items-center justify-center w-10 h-10 rounded-full overflow-hidden hover:bg-[#cfd0d1] transition-all duration-300"><img
+                      src="./src/svg/icon_swiper-next.svg" alt="" /></a>
+                  <div class="group">
+                    <a href="#"
+                      class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-[#cfd0d1] transition-all duration-300 relative group"><img
+                        src="./src/svg/icon_newTab.svg" alt="" /></a>
+                    <a
+                      class="block -ml-1 absolute top-3 py-1 px-1.5 bg-[#1111111A] text-nowrap text-[#464646] text-xs rounded-[4px] transition-all duration-300 group-hover:opacity-100 opacity-0 group-hover:-translate-y-0 translate-y-10">바로가기</a>
+                  </div>
+                </div>
+              </div>
+              <!-- !w-[24.5%] [&.swiper-slide-active]:!w-[37.4%] -->
+              <div class="swiper-wrapper">
+                <div class="swiper-slide w-auto h-auto md:h-[400px] group rounded-[4px] overflow-hidden">
+                  <a href="#"
+                    class="block transition-[height] duration-500 h-[65.5%] group-[&.swiper-slide-active]:h-full md:aspect-[16/9] rounded-sm"><img
+                      src="/src/item-1.png" alt="" class="size-full object-cover" /></a>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div
+              class="companyHistory mt-4 mx-12 h-20 bg-[url('./src/svg/bg-companyHistory.svg')] bg-center bg-no-repeat hidden">
+            </div>
+          </div>
+
+          <style>
+            .strip-track {
+              display: inline-flex;
+              animation: strip-move 20s linear infinite;
+            }
+
+            @keyframes strip-move {
+              0% {
+                transform: translateX(0);
+              }
+
+              100% {
+                transform: translateX(-50%);
+              }
+            }
+          </style>
         </div>
-      </div>
-      <div class="companyHistory mt-4 mx-12 h-20 bg-[url('./src/svg/bg-companyHistory.svg')] bg-center bg-no-repeat">
-      </div>
-    </div>
-    <div class="text-sm text-[#121212] absolute left-[6.3%] bottom-[26%] z-10 hidden md:block">
-      <div class="">
-        코드앤블록은 카페24 기반 이커머스에 특화된
-        <br />
-        에이전시로 기술적 완성도와 경험의 깊이를
-        <br />
-        더해 실질적이고 쓰이는 결과를 만듭니다.
       </div>
     </div>
   </section>
-  <div class="boxes bottom-8 flex items-center justify-center z-10 pointer-events-auto hidden">
+  <div class="boxes fixed inset-0 flex items-center justify-center pointer-events-none z-[9999]">
     <div class="box bg-black absolute top-4 left-4 w-4 h-4"></div>
     <div class="box bg-black absolute top-4 right-4 w-4 h-4"></div>
     <div class="box bg-black absolute bottom-8 left-4 w-4 h-4"></div>
     <div class="box bg-black absolute bottom-8 right-4 w-4 h-4"></div>
   </div>
+
   <div id="footer" class="flex justify-between mx-4 hidden">
     <a href="/index.html"><img src="/src/svg/text_codenblock.svg" alt="" /></a>
     <div class="items-center gap-2 hidden md:flex">
@@ -191,7 +189,7 @@
     </div>
   </div>
   <div id="linkBox"
-    class="absolute flex-shrink-0 min-w-fit bottom-[72px] h-[72px] left-1/2 -translate-x-1/2 p-2 flex gap-2 items-center bg-[#E1E2E4E5] rounded-[12px] z-30 hidden">
+    class="absolute flex-shrink-0 min-w-fit bottom-[72px] h-[72px] left-1/2 -translate-x-1/2 p-2 flex gap-2 items-center bg-[#E1E2E4E5] rounded-[12px] z-30">
     <a href="#" class="block w-14 h-14"><img src="./src/svg/icon_shoooook.svg" alt=""
         class="size-full object-cover" /></a>
     <a href="#" id="portfolio"
@@ -264,6 +262,9 @@
       centeredSlides: true,
       speed: 1000,
       autoplay: false,
+      pagination: {
+        el: ".swiper-pagination",
+      },
       navigation: {
         nextEl: "#mainBanner .swiper-btn-next",
         prevEl: "#mainBanner .swiper-btn-prev",
@@ -273,6 +274,7 @@
           slidesPerView: "auto",
         },
       },
+
     });
 
     // 로드된 후 3초 뒤 실행
@@ -284,6 +286,35 @@
     }, 2500);
   });
 </script>
+
+<style>
+  .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 2px;
+    height: 12px;
+    /* 기본 높이 */
+    background: #c4c4c4;
+    opacity: 1;
+    border-radius: 0;
+    transition: all 0.3s;
+  }
+
+  .swiper-pagination-bullet-active {
+    height: 18px;
+    /* active 높이 */
+    background: #0b1623;
+  }
+
+  .swiper-pagination-bullet.hidden {
+    display: none;
+  }
+</style>
 
 <!-- 버튼 border 회전 -->
 <style>
@@ -299,7 +330,7 @@
 
   #contentHeader,
   .boxes {
-    animation: disappear 0.3s forwards, appear 0.3s 2s forwards;
+    animation: disappear 0s forwards, appear 0.3s 1.7s forwards;
   }
 
   .animate-spin-slow {
@@ -324,21 +355,17 @@
     animation: appear 0.3s, disappear 0.3s 0.3s forwards;
   }
 
-
-  #section-1 {
-    animation: disappear 0.3s 2.4s forwards;
-  }
-
-  #section-2 {
-    animation: disappear 0s forwards, appear 0.3s 2.5s ease-out forwards;
-  }
-
   #footer {
     animation: disappear 0s forwards, appear 0.3s 2.5s ease-out forwards;
   }
 
+  #mainBanner {
+    animation: disappear 0s forwards, appear 0.5s 2.3s forwards;
+  }
+
   #floatingBox,
-  #linkBox {
+  #linkBox,
+  #portfolioLinkBox {
     animation: disappear 0s forwards, appear 0.3s 2.7s ease-out forwards;
   }
 

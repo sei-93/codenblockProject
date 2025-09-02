@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- pretendard -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <!-- onset -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet" />
+
+    <!--Asta Sans  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&family=Onest:wght@100..900&display=swap" rel="stylesheet" />
+
+    <!-- tailwindcss -->
+    <script src="/js/tailwind.js"></script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- timeCalc.js -->
+    <script defer src="/js/timeCalc.js"></script>
+  </head>
+  <body class="bg-[#FAFAFA] leading-[130%] tracking-[-1px] text-sm relative" style="font-family: 'Asta Sans', sans-serif">
+    <section class="w-screen h-screen overflow-hidden absolute top-0 left-0 z-10">
+      <div class="flex items-center justify-center w-screen h-screen box-border">
+        <div class="z-10 absolute left-4 top-4 bottom-8 right-4 toContainerBox bg-[#FAFAFA]">
+          <div class="mt-14 ml-10 mb-12 text-[#121212] text-[40px] leading-[130%] min-h-[100px] font-bold">
+            <div>
+              꾸준한 자기 관리를 위한
+              <br />
+              헬스&이너뷰티 브랜드, 영라뉴
+            </div>
+          </div>
+          <div class="flex justify-between items-center mb-3">
+              <div class="ml-10 flex gap-12 text-[#FF5E1D] text-sm ">
+                <div>ECOMMERCE RENEWAL</div>
+                <div>UX</div>
+                <div>PB</div>
+                <div>PB</div>
+                <div>9999</div>
+              </div>
+              <a href="#" class="text-[#FF5E1D] text-sm flex items-center">
+                <div>사이트 바로가기</div>
+                <div><img src="/src/svg/icon_arrow_topRight-orange.svg" alt=""></div>
+              </a>
+          </div>
+          <div class="h-[520px]"><img src="/src/youngranu/item-1.png" alt=""></div>
+        </div>
+
+        <div id="footer" class="flex justify-between mx-4 absolute bottom-2 left-0 right-0">
+          <a href="/index.html"><img src="/src/svg/text_codenblock.svg" alt="" /></a>
+          <div class="items-center gap-2 hidden md:flex">
+            <a href="">codenblock@gmail.com</a>
+            <div class="w-1 h-1 bg-[#E1E2E4]"></div>
+            <a href="#" class="flex gap-1.5 items-center">
+              <div class="text-sm font-medium flex">회사소개서</div>
+              <div class="w-[18px] h-[18px]"><img src="/src/svg/icon_download2-black.svg" alt="" class="size-full object-cover" /></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="boxes fixed inset-0 flex items-center justify-center pointer-events-none z-[9999]">
+      <div class="box bg-black absolute top-2 left-2 w-4 h-4"></div>
+      <div class="box bg-black absolute top-2 right-2 w-4 h-4"></div>
+      <div class="box bg-black absolute bottom-8 left-2 w-4 h-4"></div>
+      <div class="box bg-black absolute bottom-8 right-2 w-4 h-4"></div>
+    </div>
+  </body>
+
+  <style>
+    #category {
+      display: none;
+    }
+
+    #category.active {
+      display: block;
+    }
+
+    #categoryToggleBox.active img:first-child {
+      display: none;
+    }
+
+    #categoryToggleBox img:first-child {
+      display: block;
+    }
+
+    #categoryToggleBox.active img:last-child {
+      display: block;
+    }
+
+    #categoryToggleBox img:last-child {
+      display: none;
+    }
+
+    #portfolio::after {
+      content: "21";
+      border-radius: 100px;
+      position: absolute;
+      top: -2px;
+      right: 0;
+      color: white;
+      font-size: 12px;
+      font-family: "Asta Sans";
+      background: #020f2333;
+      padding: 2px 8px;
+    }
+  </style>
+  <!-- 카테고리 팝업 -->
+  <script>
+    function openModal() {
+      document.getElementById("category").classList.toggle("active");
+      document.getElementById("categoryToggleBox").classList.toggle("active");
+    }
+  </script>
+</html>

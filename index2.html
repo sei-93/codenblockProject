@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- pretendard -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+  <!-- onset -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet" />
+
+  <!--Asta Sans  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&family=Onest:wght@100..900&display=swap"
+    rel="stylesheet" />
+
+  <!-- tailwindcss -->
+  <script src="./js/tailwind.js"></script>
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!--CSS-->
+  <link rel="stylesheet" href="./style/main_animation.css" />
+</head>
+
+<body>
+
+  <!-- Swiper Container -->
+
+  <div class="absolute top-1/4 left-0 right-0 flex items-center justify-center">
+    <div class="bg-black w-[700px] h-[10px]"></div>
+  </div>
+  <div id="mainBanner" class="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+    <div class="swiper">
+      <div id="portfolioLinkBox"
+        class="portfolioLinkBox max-w-[711px] min-w-[37.7%] flex p-2 justify-between mb-3 mx-auto bg-[#E1E2E4E5] rounded-lg">
+        <div class="flex items-center">
+          <div class="w-10 h-10 rounded-lg mr-3"><img src="/src/svg/logo_youngranu.svg" alt="" /></div>
+          <div class="mr-1.5">영라뉴 웹사이트 리뉴얼</div>
+          <div class="text-[#646464]">@CAFE24</div>
+        </div>
+        <div class="flex items-center">
+          <a href="#"
+            class="flex items-center justify-center w-10 h-10 rounded-full overflow-hidden hover:bg-[#cfd0d1] transition-all duration-300"><img
+              src="/src/svg/icon_download.svg" alt="" /></a>
+          <a href="#"
+            class="swiper-btn-prev flex items-center justify-center w-10 h-10 rounded-full overflow-hidden hover:bg-[#cfd0d1] transition-all duration-300"><img
+              src="/src/svg/icon_swiper-prev.svg" alt="" /></a>
+          <a href="#"
+            class="swiper-btn-next flex items-center justify-center w-10 h-10 rounded-full overflow-hidden hover:bg-[#cfd0d1] transition-all duration-300"><img
+              src="/src/svg/icon_swiper-next.svg" alt="" /></a>
+          <div class="group">
+            <a href="#"
+              class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-[#cfd0d1] transition-all duration-300 relative group"><img
+                src="/src/svg/icon_newTab.svg" alt="" /></a>
+            <a
+              class="block -ml-1 absolute top-3 py-1 px-1.5 bg-[#1111111A] text-nowrap text-[#464646] text-xs rounded-[4px] transition-all duration-300 group-hover:opacity-100 opacity-0 group-hover:-translate-y-0 translate-y-10">바로가기</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide hidden"><a href="#"><img src="/src/item-1.png" alt=""></a></div>
+        <div class="swiper-slide hidden"><a href="#"><img src="/src/item-1.png" alt=""></a></div>
+        <div class="swiper-slide hidden"><a href="#"><img src="/src/item-1.png" alt=""></a></div>
+        <div class="swiper-slide hidden"><a href="#"><img src="/src/item-1.png" alt=""></a></div>
+        <div class="swiper-slide hidden"><a href="#"><img src="/src/item-1.png" alt=""></a></div>
+        <div class="swiper-slide hidden"><a href="#"><img src="/src/item-1.png" alt=""></a></div>
+        <div class="swiper-slide hidden"><a href="#"><img src="/src/item-1.png" alt=""></a></div>
+        <div class="swiper-slide hidden"><a href="#"><img src="/src/item-1.png" alt=""></a></div>
+        <div class="swiper-slide hidden"><a href="#"><img src="/src/item-1.png" alt=""></a></div>
+        <div class="swiper-slide hidden"><a href="#"><img src="/src/item-1.png" alt=""></a></div>
+        <div class="swiper-slide hidden"><a href="#"><img src="/src/item-1.png" alt=""></a></div>
+        <div class="swiper-slide hidden"><a href="#"><img src="/src/item-1.png" alt=""></a></div>
+      </div>
+      <div class="swiperPaginationParentBox">
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<style>
+
+  @keyframes expand{
+    0%{
+      width:400px;
+    }
+    50%{
+      height:420px;
+    }
+    100%{
+      width:700px;
+       height:420px;
+    }
+  }
+
+  .swiper-slide {
+    width: 400px;
+    height:240px;
+
+  }
+
+  .swiper-slide.expand {
+    animation:expand 1s forwards;
+  }
+</style>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 'auto',
+      centeredSlides: true,
+      spaceBetween: 16,
+      loop: true,
+      speed: 800,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      navigation: {
+        nextEl: ".swiper-btn-next",
+      },
+      // 스와이퍼 이벤트 핸들러를 사용합니다.
+      on: {
+        // 스와이퍼 초기화 시
+        init: function () {
+          const allSlides = this.slides; 
+          allSlides.forEach((el) => {
+            el.classList.remove("hidden");
+          });
+        },
+        // 슬라이드 전환이 끝났을 때
+        slideChangeTransitionEnd: function () {
+          // 모든 슬라이드의 'expand' 클래스를 제거
+          this.slides.forEach(slide => {
+            slide.classList.remove('expand');
+          });
+          // 현재 활성 슬라이드에 'expand' 클래스를 추가
+          this.slides[this.activeIndex].classList.add('expand');
+        },
+      },
+    });
+  });
+</script>
+
+<style>
+  .swiperPaginationParentBox {
+    /* max-width: 150px; */
+    position: relative;
+    width: 100%;
+    margin: 80px auto;
+  }
+
+  .swiper-pagination {
+    display: flex;
+    justify-content: top;
+    gap: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+  }
+
+  .swiper-pagination-bullet {
+    width: 2px;
+    height: 12px;
+    /* 기본 높이 */
+    background: #c4c4c4;
+    opacity: 1;
+    border-radius: 0;
+    transition: all 0.3s;
+    flex-shrink: 0;
+  }
+
+  .swiper-pagination-bullet-active {
+    height: 18px;
+    /* active 높이 */
+    background: #0b1623;
+  }
+</style>
+
+</html>

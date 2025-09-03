@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- pretendard -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <!-- onset -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet" />
+
+    <!-- Noto Serif Display ExtraCondensed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&display=swap" rel="stylesheet" />
+
+    <!--Asta Sans  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&family=Onest:wght@100..900&display=swap" rel="stylesheet" />
+
+    <!-- tailwindcss -->
+    <script src="/js/tailwind.js"></script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- util js -->
+    <script defer src="/js/timeCalc.js"></script>
+    <script defer src="/js/disableRightClick.js"></script>
+    <script defer src="/js/popup.js"></script>
+
+    <!-- data -->
+    <script src="/js/items.js"></script>
+  </head>
+  <body class="bg-[#FAFAFA] leading-[130%] tracking-[-1px] text-sm relative" oncontextmenu="return false;" style="font-family: 'Asta Sans', sans-serif">
+    <div class="w-screen h-screen overflow-hidden absolute top-0 left-0 z-10">
+      <div class="flex items-center justify-center w-screen h-screen box-border">
+        <div class="z-10 absolute left-2 top-2 bottom-8 right-2 toContainerBox bg-[#f1f1f1] overflow-y-scroll-auto">
+          <div class="absolute top-[30px] left-6 z-10 hidden md:flex flex-col">
+            <div class="flex gap-2 h-[18px] items-center mt-[1px]">
+              <img src="/src/svg/icon_circle-gray.svg" alt="" class="w-1.5 h-1.5" />
+              <div class="font-[Onest] text-sm font-semibold">SEOUL, KR</div>
+              <div id="timeBox" class="font-[Onest] flex gap-1 text-[#464646]"></div>
+            </div>
+            <div class="mt-10">
+              <div class="flex flex-col gap-[26px]">
+                <div class="flex flex-col gap-2">
+                  <div class="font-['onset'] text-[#999] text-xs">ADDRESS</div>
+                  <div class="text-[#424242] text-sm font-medium">
+                    서울시 강남구 논현로 99길 23
+                    <br />
+                    2층 202호(역삼동, 인사이트빌딩)
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <div class="font-['onset'] text-[#999] text-xs">E-MAIL</div>
+                  <a href="mailto:info@codenblock.com" class="text-[#424242] text-sm font-medium">info@codenblock.com</a>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <div class="font-['onset'] text-[#999] text-xs">CEO</div>
+                  <div class="text-[#424242] text-sm font-medium">Myungjun Hyun</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="beforeSubmit" class="w-full h-full ">
+            <div class="flex flex-col items-center justify-center">
+              <div class="flex items-center justify-center mb-10 gap-2">
+                <div id="step1" class="step group active flex flex-col items-center gap-1">
+                  <img src="/src/svg/step_1.svg" alt="" class="opacity-50 group-[&.active]:opacity-100" />
+                  <div class="font-semibold text-[#999] group-[&.active]:text-[#242424] text-lg">이름</div>
+                </div>
+                <div class="w-[72px] h-[2px] bg-[#D1D3D4] mt-[9px]"></div>
+                <div id="step2" class="step group flex flex-col items-center gap-1">
+                  <img src="/src/svg/step_2.svg" alt="" class="opacity-50 group-[&.active]:opacity-100" />
+                  <div class="font-semibold text-[#999] group-[&.active]:text-[#242424] text-lg">연락처</div>
+                </div>
+                <div class="w-[72px] h-[2px] bg-[#D1D3D4] mt-[9px]"></div>
+                <div id="step3" class="step group flex flex-col items-center gap-1">
+                  <img src="/src/svg/step_3.svg" alt="" class="opacity-50 group-[&.active]:opacity-100" />
+                  <div class="font-semibold text-[#999] group-[&.active]:text-[#242424] text-lg">메모</div>
+                </div>
+              </div>
+              <div class="swiper flex flex-col justify-between w-[572px] h-full">
+                <div class="swiper-wrapper relative">
+                  <div class="swiper-slide">
+                    <div class="mt-10 text-[#121212] text-[32px] font-semibold leading-[40px] text-center">
+                      프로젝트 시작 전 의뢰인 분의
+                      <br />
+                      성함을 먼저 알려주세요
+                    </div>
+                    <div class="flex flex-col gap-12 mt-[120px]">
+                      <div class="border-b-2 border-black py-5 flex items-center gap-6 min-w-[512px]">
+                        <div class="w-[120px] text-2xl text-[#767676]">성함</div>
+                        <input class="grow bg-transparent focus:border-none min-h-[29px] text-[29px] text-[#121212] font-medium" type="text" placeholder="의뢰인 분의 성함을 입력해주세요" />
+                      </div>
+                      <div class="border-b-2 border-black py-5 flex items-center gap-6 min-w-[512px]">
+                        <div class="w-[120px] text-2xl text-[#767676]">회사명</div>
+                        <input class="grow bg-transparent focus:border-none min-h-[29px] text-[29px] text-[#121212] font-medium" type="text" placeholder="회사명 또는 브랜드명을 입력해주세요" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="mt-10 text-[#121212] text-[32px] font-semibold leading-[40px] text-center">
+                      연락이 가능한 이메일과 번호를 입력해 주세요
+                      <br />
+                      번호를 입력해 주세요
+                    </div>
+                    <div class="flex flex-col gap-12 mt-[120px]">
+                      <div class="border-b-2 border-black py-5 flex items-center gap-6 min-w-[512px]">
+                        <div class="w-[120px] text-2xl text-[#767676]">이메일</div>
+                        <input class="grow bg-transparent focus:border-none min-h-[29px] text-[29px] text-[#121212] font-medium" type="text" placeholder="연락받으실 이메일을 입력해주세요" />
+                      </div>
+                      <div class="border-b-2 border-black py-5 flex items-center gap-6 min-w-[512px]">
+                        <div class="w-[120px] text-2xl text-[#767676]">전화번호</div>
+                        <input class="grow bg-transparent focus:border-none min-h-[29px] text-[29px] text-[#121212] font-medium" type="text" placeholder="담당자 연락처를 입력해주세요" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="mt-10 text-[#121212] text-[32px] font-semibold leading-[40px] text-center">
+                      마지막으로 프로젝트에 대해
+                      <br />
+                      남기실 말이 있다면 적어주세요
+                    </div>
+                    <div class="flex flex-col mt-[120px]">
+                      <div class="border-b-2 border-black py-5 flex flex-col gap-10 min-w-[512px]">
+                        <div class="w-[120px] text-2xl text-[#767676]">메모</div>
+                        <input class="grow bg-transparent focus:border-none min-h-[29px] text-[29px] text-[#121212] font-medium" type="text" placeholder="프로젝트에 대해 남기실 말이 있다면 간략히 설명해 주세요" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div id="swiperBtnBox" class="mx-auto w-full max-w-[405px] mb-10 rounded-lg bg-[#E1E2E4E5] p-2 flex items-center h-[72px] gap-2 z-10">
+                  <button onclick="nextStep();" class="swiper-btn-next grow text-white bg-[#374254E5] h-full flex items-center justify-center rounded-lg px-4 py-2 font-semibold">다음으로</button>
+                  <button onclick="submitData();" class="grow text-white bg-[#0E1424E5] h-full flex items-center justify-center rounded-lg px-4 py-2 font-semibold hidden">제출하기</button>
+                  <button class="w-14 h-14 flex items-center justify-center bg-white rounded-lg"><img src="/src/svg/icon_cancel.svg" alt="" class="" /></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="afterSubmit" class="w-full h-full flex flex-col items-center justify-center hidden">
+            <div class="flex flex-col gap-1 items-center">
+              <img src="/src/svg/step_complete.svg" alt="" class="w-[18px] h-[18px]" />
+              <div class="text-[#242424] text-sm font-semibold">제출완료</div>
+            </div>
+            <div class="mt-12 text-[#111111] text-center text-[40px] font-semibold leading-normal">
+              <span class="text-[#121212] opacity-100">아무무</span>
+              <span class="opacity-50">
+                님의
+                <br />
+              </span>
+              <span class="text-[#121212] opacity-100">sun@codenblock.com</span>
+              <span class="opacity-50">로</span>
+              <br />
+              <span class="opacity-50">
+                회사 소개서를 보내드렸습니다.
+                <br />
+                곧 연락드리겠습니다.
+              </span>
+            </div>
+            <div id="linkBox" class="absolute flex-shrink-0 min-w-fit bottom-[72px] h-[72px] left-1/2 -translate-x-1/2 p-2 flex gap-2 items-center bg-[#E1E2E4E5] rounded-[12px] z-[9999]">
+              <a href="/index.html" class="block w-14 h-14"><img src="/src/svg/icon_shoooook.svg" alt="" class="size-full object-cover" /></a>
+              <a href="/pages/list.html" id="portfolio" class="items-center justify-center min-w-[56px] h-full p-2 relative hidden md:flex">포트폴리오</a>
+              <a href="#" class="items-center justify-center min-w-[45px] h-full p-2 hidden md:flex">회사소개</a>
+              <div href="#" class="text-nowrap flex items-center justify-center min-w-[70px] h-full overflow-hidden relative p-[1px] rounded-[8px]">
+                <div class="absolute aspect-square w-[120px] rounded-full animate-spin-slow bg-[conic-gradient(#767676,#F1F1F1,#999999,#767676,#F1F1F1,#999999)]"></div>
+                <a href="/pages/contact.html" class="w-full h-full bg-white flex items-center justify-center px-4 rounded-[8px] z-10">프로젝트 문의</a>
+              </div>
+              <div id="categoryToggleBox" onclick="openModal();" class="w-14 h-14 bg-white rounded-lg flex items-center justify-center cursor-pointer md:hidden">
+                <img src="/src/svg/icon_category.svg" alt="" class="block w-4 h-3" />
+                <img src="/src/svg/icon_cancel.svg" alt="" class="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="footer" class="flex justify-between mx-4 absolute bottom-2 left-0 right-0">
+          <a href="/index.html"><img src="/src/svg/text_codenblock.svg" alt="" /></a>
+          <div class="items-center gap-2 hidden md:flex">
+            <a href="">codenblock@gmail.com</a>
+            <div class="w-1 h-1 bg-[#E1E2E4]"></div>
+            <a href="#" class="flex gap-1.5 items-center">
+              <div class="text-sm font-medium flex">회사소개서</div>
+              <div class="w-[18px] h-[18px]"><img src="/src/svg/icon_download2-black.svg" alt="" class="size-full object-cover" /></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="boxes fixed inset-0 flex items-center justify-center pointer-events-none z-[9999]">
+      <div class="box bg-black absolute top-2 left-2 w-4 h-4"></div>
+      <div class="box bg-black absolute top-2 right-2 w-4 h-4"></div>
+      <div class="box bg-black absolute bottom-8 left-2 w-4 h-4"></div>
+      <div class="box bg-black absolute bottom-8 right-2 w-4 h-4"></div>
+    </div>
+  </body>
+</html>
+
+<style>
+  @keyframes spin-slow {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 5s linear infinite;
+  }
+</style>
+
+<script>
+  let nowStep = 1;
+
+  function nextStep() {
+    const steps = document.querySelectorAll(".step");
+    steps.forEach((step) => step.classList.remove("active"));
+
+    steps.forEach((step, idx) => {
+      const img = step.querySelector("img");
+      if (idx < nowStep) {
+        img.src = "/src/svg/step_complete.svg"; // 완료 아이콘
+      }
+    });
+
+    if (nowStep < steps.length) {
+      steps[nowStep].classList.add("active");
+      nowStep++;
+    }
+
+    if (nowStep === 3) {
+      const btn = document.querySelector(".swiper-btn-next");
+      btn.classList.add("hidden");
+      btn.nextElementSibling.classList.remove("hidden");
+    }
+  }
+
+  function submitData() {
+    beforeSubmit.classList.add("hidden");
+    afterSubmit.classList.remove("hidden");
+  }
+</script>
+
+<script>
+  const swiper = new Swiper(".swiper", {
+    direction: "horizontal",
+    loop: false,
+    slidesPerView: 1,
+    allowTouchMove: false,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: false, // 불릿 클릭 가능
+    },
+    navigation: {
+      nextEl: ".swiper-btn-next",
+    },
+  });
+</script>
+
+<style>
+  input:focus {
+    outline: none;
+    border: none;
+  }
+
+  input:focus::placeholder {
+    opacity: 0;
+  }
+
+  input::placeholder {
+    font-size: 24px;
+    font-weight: 500;
+    color: #121212;
+    opacity: 1;
+  }
+
+  .toContainerBox {
+    overflow: auto;
+    scrollbar-width: none;
+  }
+  .toContainerBox::-webkit-scrollbar {
+    display: none;
+  }
+</style>
+
+<style>
+  .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    overflow: hidden;
+    position: static !important;
+  }
+
+  .swiper-pagination-bullet {
+    width: 2px;
+    height: 12px;
+    background: #c4c4c4;
+    opacity: 1;
+    border-radius: 0;
+    transition: all 0.3s;
+    flex-shrink: 0;
+  }
+
+  .swiper-pagination-bullet-active {
+    height: 18px;
+    background: #0b1623;
+  }
+</style>

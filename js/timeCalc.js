@@ -21,5 +21,7 @@
         const sign = offsetMinutes <= 0 ? "+" : "-";
 
         // GMT+9 또는 GMT+5:30 같은 포맷 지원
-        timeBox.textContent = `${hours}:${minutes} GMT${sign}${offsetHours}${offsetMins ? ":" + offsetMins.toString().padStart(2, "0") : ""}`;
+        if(timeBox){
+            timeBox.textContent = `${hours}:${minutes} GMT${sign}${offsetHours}${offsetMins ? ":" + offsetMins.toString().padStart(2, "0") : ""}`;
+        }
     }

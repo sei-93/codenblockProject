@@ -30,14 +30,18 @@
     <!--CSS-->
     <link rel="stylesheet" href="/style/main_animation.css" />
 
-    <!-- timeCalc.js -->
+    <!-- util js -->
     <script defer src="/js/timeCalc.js"></script>
-  </head>
+    <script defer src="/js/disableRightClick.js"></script>
+    <script defer src="/js/popup.js"></script>
 
-  <body class="bg-[#fff] leading-[130%] tracking-[-1px] text-sm relative" style="font-family: 'Asta Sans', sans-serif">
-    <section class="w-screen h-screen overflow-hidden absolute top-0 left-0 z-10">
+    <!-- data -->
+    <script src="/js/jsonLoader.js"></script>
+  </head>
+  <body class="bg-[#fff] leading-[130%] tracking-[-1px] text-sm relative" oncontextmenu="return false;" style="font-family: 'Asta Sans', sans-serif">
+    <div class="w-screen h-screen overflow-hidden absolute top-0 left-0 z-10">
       <div class="flex items-center justify-center w-screen h-screen box-border">
-        <div class="z-10 absolute left-4 top-4 bottom-8 right-4 toContainerBox bg-[#f1f1f1] overflow-y-scroll">
+        <div class="z-10 absolute left-4 top-4 bottom-8 right-4 toContainerBox bg-[#f1f1f1] overflow-y-scroll-auto">
           <div id="floatingBox">
             <div class="absolute top-[30px] left-6 gap-[78px] z-10 hidden md:flex">
               <div class="flex gap-2 h-[18px] items-center mt-[1px]">
@@ -60,136 +64,18 @@
               <div class="md:mb-8">쓰이는 결과만</div>
               <div>담았습니다.</div>
             </div>
-            <div id="portfolioGrid" class="grid grid-cols-1 md:grid-cols-3 gap-x-2 gap-y-3 md:gap-y-12 mt-8 mb-10">
-              <a href="/pages/detail.html">
-                <div><img src="/src/item-1.png" alt="" /></div>
-                <div class="flex items-center mt-3 font-['onset'] gap-1.5">
-                  <div class="text-[#646464] text-sm">PUBLISHING</div>
-                  <div class="w-0.5 h-0.5 rounded-full bg-[#646464]"></div>
-                  <div class="text-[#646464] text-sm">2025</div>
-                </div>
-                <div class="text-[#121212] text-lg font-medium mt-1">영라뉴 웹사이트 리뉴얼</div>
-              </a>
-              <a href="#">
-                <div><img src="/src/item-1.png" alt="" /></div>
-                <div class="flex items-center mt-3 font-['onset'] gap-1.5">
-                  <div class="text-[#646464] text-sm">PUBLISHING</div>
-                  <div class="w-0.5 h-0.5 rounded-full bg-[#646464]"></div>
-                  <div class="text-[#646464] text-sm">2025</div>
-                </div>
-                <div class="text-[#121212] text-lg font-medium mt-1">영라뉴 웹사이트 리뉴얼</div>
-              </a>
-              <a href="#">
-                <div><img src="/src/item-1.png" alt="" /></div>
-                <div class="flex items-center mt-3 font-['onset'] gap-1.5">
-                  <div class="text-[#646464] text-sm">PUBLISHING</div>
-                  <div class="w-0.5 h-0.5 rounded-full bg-[#646464]"></div>
-                  <div class="text-[#646464] text-sm">2025</div>
-                </div>
-                <div class="text-[#121212] text-lg font-medium mt-1">영라뉴 웹사이트 리뉴얼</div>
-              </a>
-              <a href="#">
-                <div><img src="/src/item-1.png" alt="" /></div>
-                <div class="flex items-center mt-3 font-['onset'] gap-1.5">
-                  <div class="text-[#646464] text-sm">PUBLISHING</div>
-                  <div class="w-0.5 h-0.5 rounded-full bg-[#646464]"></div>
-                  <div class="text-[#646464] text-sm">2025</div>
-                </div>
-                <div class="text-[#121212] text-lg font-medium mt-1">영라뉴 웹사이트 리뉴얼</div>
-              </a>
-              <a href="#">
-                <div><img src="/src/item-1.png" alt="" /></div>
-                <div class="flex items-center mt-3 font-['onset'] gap-1.5">
-                  <div class="text-[#646464] text-sm">PUBLISHING</div>
-                  <div class="w-0.5 h-0.5 rounded-full bg-[#646464]"></div>
-                  <div class="text-[#646464] text-sm">2025</div>
-                </div>
-                <div class="text-[#121212] text-lg font-medium mt-1">영라뉴 웹사이트 리뉴얼</div>
-              </a>
-              <a href="#">
-                <div><img src="/src/item-1.png" alt="" /></div>
-                <div class="flex items-center mt-3 font-['onset'] gap-1.5">
-                  <div class="text-[#646464] text-sm">PUBLISHING</div>
-                  <div class="w-0.5 h-0.5 rounded-full bg-[#646464]"></div>
-                  <div class="text-[#646464] text-sm">2025</div>
-                </div>
-                <div class="text-[#121212] text-lg font-medium mt-1">영라뉴 웹사이트 리뉴얼</div>
-              </a>
-              <a href="#">
-                <div><img src="/src/item-1.png" alt="" /></div>
-                <div class="flex items-center mt-3 font-['onset'] gap-1.5">
-                  <div class="text-[#646464] text-sm">PUBLISHING</div>
-                  <div class="w-0.5 h-0.5 rounded-full bg-[#646464]"></div>
-                  <div class="text-[#646464] text-sm">2025</div>
-                </div>
-                <div class="text-[#121212] text-lg font-medium mt-1">영라뉴 웹사이트 리뉴얼</div>
-              </a>
-              <a href="#">
-                <div><img src="/src/item-1.png" alt="" /></div>
-                <div class="flex items-center mt-3 font-['onset'] gap-1.5">
-                  <div class="text-[#646464] text-sm">PUBLISHING</div>
-                  <div class="w-0.5 h-0.5 rounded-full bg-[#646464]"></div>
-                  <div class="text-[#646464] text-sm">2025</div>
-                </div>
-                <div class="text-[#121212] text-lg font-medium mt-1">영라뉴 웹사이트 리뉴얼</div>
-              </a>
-              <a href="#">
-                <div><img src="/src/item-1.png" alt="" /></div>
-                <div class="flex items-center mt-3 font-['onset'] gap-1.5">
-                  <div class="text-[#646464] text-sm">PUBLISHING</div>
-                  <div class="w-0.5 h-0.5 rounded-full bg-[#646464]"></div>
-                  <div class="text-[#646464] text-sm">2025</div>
-                </div>
-                <div class="text-[#121212] text-lg font-medium mt-1">영라뉴 웹사이트 리뉴얼</div>
-              </a>
-              <a href="#">
-                <div><img src="/src/item-1.png" alt="" /></div>
-                <div class="flex items-center mt-3 font-['onset'] gap-1.5">
-                  <div class="text-[#646464] text-sm">PUBLISHING</div>
-                  <div class="w-0.5 h-0.5 rounded-full bg-[#646464]"></div>
-                  <div class="text-[#646464] text-sm">2025</div>
-                </div>
-                <div class="text-[#121212] text-lg font-medium mt-1">영라뉴 웹사이트 리뉴얼</div>
-              </a>
-              <a href="#">
-                <div><img src="/src/item-1.png" alt="" /></div>
-                <div class="flex items-center mt-3 font-['onset'] gap-1.5">
-                  <div class="text-[#646464] text-sm">PUBLISHING</div>
-                  <div class="w-0.5 h-0.5 rounded-full bg-[#646464]"></div>
-                  <div class="text-[#646464] text-sm">2025</div>
-                </div>
-                <div class="text-[#121212] text-lg font-medium mt-1">영라뉴 웹사이트 리뉴얼</div>
-              </a>
-              <a href="#">
-                <div><img src="/src/item-1.png" alt="" /></div>
-                <div class="flex items-center mt-3 font-['onset'] gap-1.5">
-                  <div class="text-[#646464] text-sm">PUBLISHING</div>
-                  <div class="w-0.5 h-0.5 rounded-full bg-[#646464]"></div>
-                  <div class="text-[#646464] text-sm">2025</div>
-                </div>
-                <div class="text-[#121212] text-lg font-medium mt-1">영라뉴 웹사이트 리뉴얼</div>
-              </a>
-              <a href="#">
-                <div><img src="/src/item-1.png" alt="" /></div>
-                <div class="flex items-center mt-3 font-['onset'] gap-1.5">
-                  <div class="text-[#646464] text-sm">PUBLISHING</div>
-                  <div class="w-0.5 h-0.5 rounded-full bg-[#646464]"></div>
-                  <div class="text-[#646464] text-sm">2025</div>
-                </div>
-                <div class="text-[#121212] text-lg font-medium mt-1">영라뉴 웹사이트 리뉴얼</div>
-              </a>
-            </div>
+            <div cnb_module="shk-list-loop" id="portfolioGrid" class="grid grid-cols-1 md:grid-cols-3 gap-x-2 gap-y-3 md:gap-y-12 mt-8 mb-10"></div>
           </div>
         </div>
 
         <div id="linkBox" class="absolute z-[9999] flex-shrink-0 min-w-fit bottom-[72px] h-[72px] left-1/2 -translate-x-1/2 p-2 flex gap-2 items-center bg-[#E1E2E4E5] rounded-[12px]">
           <a href="/index.html" class="block w-14 h-14"><img src="/src/svg/icon_shoooook.svg" alt="" class="size-full object-cover" /></a>
-          <a href="/pages/portfolio.html" id="portfolio" class="items-center justify-center min-w-[56px] h-full p-2 relative hidden md:flex">포트폴리오</a>
+          <a href="/pages/list.html" id="portfolio" class="items-center justify-center min-w-[56px] h-full p-2 relative hidden md:flex">포트폴리오</a>
           <a href="#" class="items-center justify-center min-w-[45px] h-full p-2 hidden md:flex">회사소개</a>
-          <a href="#" class="text-nowrap flex items-center justify-center min-w-[70px] h-full overflow-hidden relative p-[1px] rounded-[8px]">
+          <div href="#" class="text-nowrap flex items-center justify-center min-w-[70px] h-full overflow-hidden relative p-[1px] rounded-[8px]">
             <div class="absolute aspect-square w-[120px] rounded-full animate-spin-slow bg-[conic-gradient(#767676,#F1F1F1,#999999,#767676,#F1F1F1,#999999)]"></div>
-            <div class="w-full h-full bg-white flex items-center justify-center px-4 rounded-[8px] z-10">프로젝트 문의</div>
-          </a>
+            <a href="/pages/contact.html" class="w-full h-full bg-white flex items-center justify-center px-4 rounded-[8px] z-10">프로젝트 문의</a>
+          </div>
           <div id="categoryToggleBox" onclick="openModal();" class="w-14 h-14 bg-white rounded-lg flex items-center justify-center cursor-pointer md:hidden">
             <img src="/src/svg/icon_category.svg" alt="" class="block w-4 h-3" />
             <img src="/src/svg/icon_cancel.svg" alt="" class="" />
@@ -227,7 +113,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <div class="boxes fixed inset-0 flex items-center justify-center pointer-events-none z-[9999]">
       <div class="box bg-black absolute top-4 left-4 w-4 h-4"></div>
       <div class="box bg-black absolute top-4 right-4 w-4 h-4"></div>
@@ -262,14 +148,6 @@
     }
   </style>
 
-  <!-- 카테고리 팝업 -->
-  <script>
-    function openModal() {
-      document.getElementById("category").classList.toggle("active");
-      document.getElementById("categoryToggleBox").classList.toggle("active");
-    }
-  </script>
-
   <style>
     @keyframes spin-slow {
       0% {
@@ -282,7 +160,7 @@
     }
 
     .animate-spin-slow {
-      animation: spin-slow 1.5s linear infinite;
+      animation: spin-slow 5s linear infinite;
     }
 
     #portfolio::after {
@@ -306,4 +184,33 @@
       display: none; /* Chrome, Safari */
     }
   </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      portfolioInit();
+      function portfolioInit() {
+        if (typeof portfolioData === "undefined") {
+          setTimeout(portfolioInit, 100); // 100ms 후 다시 시도
+          return;
+        }
+
+        const loopTarget = document.querySelector('[cnb_module="shk-list-loop"]');
+        if (!loopTarget) return;
+        portfolioData.forEach((item) => {
+          const a = document.createElement("a");
+          a.href = item.link;
+          a.className = "block aspect-[304/177]";
+          a.innerHTML = `
+        <div class="flex aspect-[304/177]"><img src="${item.thumbnail}" alt="${item.projectName}" class="size-full object-cover" /></div>
+        <div class="flex items-center mt-3 font-['onset'] gap-1.5">
+          <div class="text-[#646464] text-sm">${item.task}</div>
+          <div class="w-0.5 h-0.5 rounded-full bg-[#646464]"></div>
+          <div class="text-[#646464] text-sm">${item.year}</div>
+        </div>
+        <div class="text-[#121212] text-lg font-medium mt-1">${item.projectName}</div>
+      `;
+          loopTarget.appendChild(a);
+        });
+      }
+    });
+  </script>
 </html>

@@ -1,0 +1,234 @@
+{
+  "portfolio": [
+    {
+      "id": 1,
+      "projectName": "영라뉴 웹사이트 리뉴얼",
+      "thumbnail": "/src/item-1.png",
+      "link": "/pages/detail.html?id=1",
+      "task": "PUBLISHING",
+      "year": 2025,
+      "detail": {
+        "header": "꾸준한 자기 관리를 위한 <br>헬스&이너뷰티 브랜드, 영라뉴",
+        "mainBanner": "/src/youngranu/mainBanner.png",
+        "subBanner": "/src/youngranu/subBanner.png",
+        "mainColor": "#FF5E1D",
+        "url": "https://youngranu.co.kr",
+        "description": [
+          "ECOMMERCE RENEWAL",
+          "UX/UI",
+          "PB",
+          "PB",
+          "9999"
+        ],
+        "information": {
+          "title" :"관리는 쉽고, 콘텐츠는 풍부하게 <br> 영라뉴 이커머스 리뉴얼",
+          "text" : "영라뉴는 차별화된 기술력, 맞춤 개발 생산 솔루션, 높은 마케팅 역량으로 국내에서 높은 가치를 지닌 프리미엄 이너뷰티 브랜드입니다. 카페24 쇼핑몰로 이전 리뉴얼을 시작하면서 상품 노출 전략, 기획전, 맞춤 옵션 기술 등을 추가해 더 좋은 고객 경험, 쉬운 쇼핑과 자체 콘텐츠, 슬로건, 컬러 등 디자인에 다양하게 적용해 영라뉴의 브랜드 가치를 생동감 있게 표현하고자 했습니다.",
+            "meta": [
+              { "label": "client", "value": "큐어라벨" },
+              { "label": "type", "value": "카페24" },
+              { "label": "release", "value": "9999.99.99" },
+              { "label": "category", "value": "쇼핑몰" }
+            ]
+        },
+        "swiper": [
+          "/src/youngranu/slide-1.png",
+          "/src/youngranu/slide-2.png",
+          "/src/youngranu/slide-3.png",
+          "/src/youngranu/slide-4.png",
+          "/src/youngranu/slide-5.png"
+        ],
+        "grid":[
+          "/src/youngranu/grid-1.png",
+          "/src/youngranu/grid-2.png",
+          "/src/youngranu/grid-3.png",
+          "/src/youngranu/grid-4.png",
+          "/src/youngranu/grid-5.png"
+        ]
+      }
+    },
+        {
+      "id": 2,
+      "projectName": "영라뉴 웹사이트 리뉴얼",
+      "thumbnail": "/src/item-1.png",
+      "link": "/pages/detail.html?id=1",
+      "task": "PUBLISHING",
+      "year": 2025,
+      "detail": {
+        "header": "테스트2",
+        "mainBanner": "/src/youngranu/subBanner.png",
+        "subBanner": "/src/youngranu/subBanner.png",
+        "mainColor": "#FF5E1D",
+        "url": "https://youngranu.co.kr",
+        "description": [
+          "ECOMMERCE RENEWAL",
+          "UX/UI",
+          "PB",
+          "PB",
+          "9999"
+        ],
+        "information": {
+          "title" :"관리는 쉽고, 콘텐츠는 풍부하게 <br> 영라뉴 이커머스 리뉴얼",
+          "text" : "영라뉴는 차별화된 기술력, 맞춤 개발 생산 솔루션, 높은 마케팅 역량으로 국내에서 높은 가치를 지닌 프리미엄 이너뷰티 브랜드입니다. 카페24 쇼핑몰로 이전 리뉴얼을 시작하면서 상품 노출 전략, 기획전, 맞춤 옵션 기술 등을 추가해 더 좋은 고객 경험, 쉬운 쇼핑과 자체 콘텐츠, 슬로건, 컬러 등 디자인에 다양하게 적용해 영라뉴의 브랜드 가치를 생동감 있게 표현하고자 했습니다.",
+            "meta": [
+              { "label": "client", "value": "큐어라벨" },
+              { "label": "type", "value": "카페24" },
+              { "label": "release", "value": "9999.99.99" },
+              { "label": "category", "value": "쇼핑몰" }
+            ]
+        },
+        "swiper": [
+          "/src/youngranu/slide-1.png",
+          "/src/youngranu/slide-2.png",
+          "/src/youngranu/slide-3.png",
+          "/src/youngranu/slide-4.png",
+          "/src/youngranu/slide-5.png"
+        ],
+        "grid":[
+          "/src/youngranu/grid-1.png",
+          "/src/youngranu/grid-2.png",
+          "/src/youngranu/grid-3.png",
+          "/src/youngranu/grid-4.png",
+          "/src/youngranu/grid-5.png"
+        ]
+      }
+    },
+        {
+      "id": 3,
+      "projectName": "영라뉴 웹사이트 리뉴얼",
+      "thumbnail": "/src/item-1.png",
+      "link": "/pages/detail.html?id=1",
+      "task": "PUBLISHING",
+      "year": 2025,
+      "detail": {
+        "header": "테스트3",
+        "mainBanner": "/src/youngranu/mainBanner.png",
+        "subBanner": "/src/youngranu/subBanner.png",
+        "mainColor": "#FF5E1D",
+        "url": "https://youngranu.co.kr",
+        "description": [
+          "ECOMMERCE RENEWAL",
+          "UX/UI",
+          "PB",
+          "PB",
+          "9999"
+        ],
+        "information": {
+          "title" :"관리는 쉽고, 콘텐츠는 풍부하게 <br> 영라뉴 이커머스 리뉴얼",
+          "text" : "영라뉴는 차별화된 기술력, 맞춤 개발 생산 솔루션, 높은 마케팅 역량으로 국내에서 높은 가치를 지닌 프리미엄 이너뷰티 브랜드입니다. 카페24 쇼핑몰로 이전 리뉴얼을 시작하면서 상품 노출 전략, 기획전, 맞춤 옵션 기술 등을 추가해 더 좋은 고객 경험, 쉬운 쇼핑과 자체 콘텐츠, 슬로건, 컬러 등 디자인에 다양하게 적용해 영라뉴의 브랜드 가치를 생동감 있게 표현하고자 했습니다.",
+            "meta": [
+              { "label": "client", "value": "큐어라벨" },
+              { "label": "type", "value": "카페24" },
+              { "label": "release", "value": "9999.99.99" },
+              { "label": "category", "value": "쇼핑몰" }
+            ]
+        },
+        "swiper": [
+          "/src/youngranu/slide-1.png",
+          "/src/youngranu/slide-2.png",
+          "/src/youngranu/slide-3.png",
+          "/src/youngranu/slide-4.png",
+          "/src/youngranu/slide-5.png"
+        ],
+        "grid":[
+          "/src/youngranu/grid-1.png",
+          "/src/youngranu/grid-2.png",
+          "/src/youngranu/grid-3.png",
+          "/src/youngranu/grid-4.png",
+          "/src/youngranu/grid-5.png"
+        ]
+      }
+    },
+        {
+      "id": 4,
+      "projectName": "영라뉴 웹사이트 리뉴얼",
+      "thumbnail": "/src/item-1.png",
+      "link": "/pages/detail.html?id=1",
+      "task": "PUBLISHING",
+      "year": 2025,
+      "detail": {
+        "header": "테스트4",
+        "mainBanner": "/src/youngranu/subBanner.png",
+        "subBanner": "/src/youngranu/subBanner.png",
+        "mainColor": "#FF5E1D",
+        "url": "https://youngranu.co.kr",
+        "description": [
+          "ECOMMERCE RENEWAL",
+          "UX/UI",
+          "PB",
+          "PB",
+          "9999"
+        ],
+        "information": {
+          "title" :"관리는 쉽고, 콘텐츠는 풍부하게 <br> 영라뉴 이커머스 리뉴얼",
+          "text" : "영라뉴는 차별화된 기술력, 맞춤 개발 생산 솔루션, 높은 마케팅 역량으로 국내에서 높은 가치를 지닌 프리미엄 이너뷰티 브랜드입니다. 카페24 쇼핑몰로 이전 리뉴얼을 시작하면서 상품 노출 전략, 기획전, 맞춤 옵션 기술 등을 추가해 더 좋은 고객 경험, 쉬운 쇼핑과 자체 콘텐츠, 슬로건, 컬러 등 디자인에 다양하게 적용해 영라뉴의 브랜드 가치를 생동감 있게 표현하고자 했습니다.",
+            "meta": [
+              { "label": "client", "value": "큐어라벨" },
+              { "label": "type", "value": "카페24" },
+              { "label": "release", "value": "9999.99.99" },
+              { "label": "category", "value": "쇼핑몰" }
+            ]
+        },
+        "swiper": [
+          "/src/youngranu/slide-1.png",
+          "/src/youngranu/slide-2.png",
+          "/src/youngranu/slide-3.png",
+          "/src/youngranu/slide-4.png",
+          "/src/youngranu/slide-5.png"
+        ],
+        "grid":[
+          "/src/youngranu/grid-1.png",
+          "/src/youngranu/grid-2.png",
+          "/src/youngranu/grid-3.png",
+          "/src/youngranu/grid-4.png",
+          "/src/youngranu/grid-5.png"
+        ]
+      }
+    },
+        {
+      "id": 5,
+      "projectName": "영라뉴 웹사이트 리뉴얼",
+      "thumbnail": "/src/item-1.png",
+      "link": "/pages/detail.html?id=1",
+      "task": "PUBLISHING",
+      "year": 2025,
+      "detail": {
+        "header": "테스트5",
+        "mainBanner": "/src/youngranu/mainBanner.png",
+        "subBanner": "/src/youngranu/subBanner.png",
+        "mainColor": "#FF5E1D",
+        "url": "https://youngranu.co.kr",
+        "description": [
+          "ECOMMERCE RENEWAL",
+          "UX/UI",
+          "PB",
+          "PB",
+          "9999"
+        ],
+        "information": {
+          "title" :"관리는 쉽고, 콘텐츠는 풍부하게 <br> 영라뉴 이커머스 리뉴얼",
+          "text" : "영라뉴는 차별화된 기술력, 맞춤 개발 생산 솔루션, 높은 마케팅 역량으로 국내에서 높은 가치를 지닌 프리미엄 이너뷰티 브랜드입니다. 카페24 쇼핑몰로 이전 리뉴얼을 시작하면서 상품 노출 전략, 기획전, 맞춤 옵션 기술 등을 추가해 더 좋은 고객 경험, 쉬운 쇼핑과 자체 콘텐츠, 슬로건, 컬러 등 디자인에 다양하게 적용해 영라뉴의 브랜드 가치를 생동감 있게 표현하고자 했습니다.",
+            "meta": [
+              { "label": "client", "value": "큐어라벨" },
+              { "label": "type", "value": "카페24" },
+              { "label": "release", "value": "9999.99.99" },
+              { "label": "category", "value": "쇼핑몰" }
+            ]
+        },
+        "swiper": [
+          "/src/youngranu/slide-1.png",
+          "/src/youngranu/slide-2.png",
+          "/src/youngranu/slide-3.png",
+          "/src/youngranu/slide-4.png",
+          "/src/youngranu/slide-5.png"
+        ],
+        "grid":[
+          "/src/youngranu/grid-1.png",
+          "/src/youngranu/grid-2.png",
+          "/src/youngranu/grid-3.png",
+          "/src/youngranu/grid-4.png",
+          "/src/youngranu/grid-5.png"
+        ]
+      }
+    }
+  ]
+}

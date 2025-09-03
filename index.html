@@ -30,12 +30,14 @@
     <!--CSS-->
     <link rel="stylesheet" href="/style/main_animation.css" />
 
-    <!-- timeCalc.js -->
+    <!-- util js -->
     <script defer src="/js/timeCalc.js"></script>
+    <script defer src="/js/disableRightClick.js"></script>
+    <script defer src="/js/popup.js"></script>
   </head>
 
-  <body class="bg-[#fff] leading-[130%] tracking-[-1px] text-sm relative" style="font-family: 'Asta Sans', sans-serif">
-    <section class="w-screen h-screen overflow-hidden absolute top-0 left-0 z-10">
+  <body class="bg-[#fff] leading-[130%] tracking-[-1px] text-sm relative" oncontextmenu="return false;" style="font-family: 'Asta Sans', sans-serif">
+    <div class="w-screen h-screen overflow-hidden absolute top-0 left-0 z-10">
       <div class="flex items-center justify-center w-screen h-screen box-border">
         <div class="flex items-center">
           <div class="text-1"><img src="/src/svg/text_code.svg" alt="" /></div>
@@ -43,7 +45,7 @@
             <img src="/src/svg/text_ampersand.svg" alt="" class="size-full object-cover" />
           </div>
           <div class="text-3"><img src="/src/svg/text_block.svg" alt="" /></div>
-          <div class="z-10 absolute left-4 top-4 toContainerBox bg-black overflow-hidden">
+          <div class="z-10 absolute left-2 top-2 right-2 bottom-8 toContainerBox bg-black overflow-hidden">
             <div class="ml-6 mt-[40px] block md:hidden textBox">
               <div class="flex items-center gap-8 md:hidden strip-track">
                 <img src="/src/svg/strip-1.svg" alt="" />
@@ -115,10 +117,10 @@
           <a href="/index.html" class="block w-14 h-14"><img src="/src/svg/icon_shoooook.svg" alt="" class="size-full object-cover" /></a>
           <a href="/pages/list.html" id="portfolio" class="items-center justify-center min-w-[56px] h-full p-2 relative hidden md:flex">포트폴리오</a>
           <a href="#" class="items-center justify-center min-w-[45px] h-full p-2 hidden md:flex">회사소개</a>
-          <a href="#" class="text-nowrap flex items-center justify-center min-w-[70px] h-full overflow-hidden relative p-[1px] rounded-[8px]">
+          <div href="#" class="text-nowrap flex items-center justify-center min-w-[70px] h-full overflow-hidden relative p-[1px] rounded-[8px]">
             <div class="absolute aspect-square w-[120px] rounded-full animate-spin-slow bg-[conic-gradient(#767676,#F1F1F1,#999999,#767676,#F1F1F1,#999999)]"></div>
-            <div class="w-full h-full bg-white flex items-center justify-center px-4 rounded-[8px] z-10">프로젝트 문의</div>
-          </a>
+            <a href="/pages/contact.html" class="w-full h-full bg-white flex items-center justify-center px-4 rounded-[8px] z-10">프로젝트 문의</a>
+          </div>
           <div id="categoryToggleBox" onclick="openModal();" class="w-14 h-14 bg-white rounded-lg flex items-center justify-center cursor-pointer md:hidden">
             <img src="/src/svg/icon_category.svg" alt="" class="block w-4 h-3" />
             <img src="/src/svg/icon_cancel.svg" alt="" class="" />
@@ -156,12 +158,12 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <div class="boxes fixed inset-0 flex items-center justify-center pointer-events-none z-[9999]">
-      <div class="box bg-black absolute top-4 left-4 w-4 h-4"></div>
-      <div class="box bg-black absolute top-4 right-4 w-4 h-4"></div>
-      <div class="box bg-black absolute bottom-8 left-4 w-4 h-4"></div>
-      <div class="box bg-black absolute bottom-8 right-4 w-4 h-4"></div>
+      <div class="box bg-black absolute top-2 left-2 w-4 h-4"></div>
+      <div class="box bg-black absolute top-2 right-2 w-4 h-4"></div>
+      <div class="box bg-black absolute bottom-8 left-2 w-4 h-4"></div>
+      <div class="box bg-black absolute bottom-8 right-2 w-4 h-4"></div>
     </div>
   </body>
 
@@ -362,10 +364,10 @@
 
     body.final-state .text-1,
     body.final-state .text-3 {
-      opacity: 0; /* disappear 최종 상태 */
+      opacity: 0; 
     }
     body.final-state .text-2 {
-      opacity: 0; /* 사라진 상태 */
+      opacity: 0; 
     }
     body.final-state .toContainerBox {
       animation: loading-text-step-7 0s forwards;

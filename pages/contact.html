@@ -71,89 +71,87 @@
               </div>
             </div>
           </div>
-          <div id="beforeSubmit" class="w-full h-full ">
-            <div class="flex flex-col items-center justify-center">
-              <div class="flex items-center justify-center mb-10 gap-2">
-                <div id="step1" class="step group active flex flex-col items-center gap-1">
-                  <img src="/src/svg/step_1.svg" alt="" class="opacity-50 group-[&.active]:opacity-100" />
-                  <div class="font-semibold text-[#999] group-[&.active]:text-[#242424] text-lg">이름</div>
+          <div id="beforeSubmit" class="w-full h-full flex flex-col items-center justify-center">
+            <div class="flex items-start justify-center gap-2 mb-6 md:mb-10 mt-[6.3%]">
+              <div id="step1" class="step group active flex flex-col items-center gap-1">
+                <img src="/src/svg/step_1.svg" alt="" class="opacity-50 group-[&.active]:opacity-100" />
+                <div class="font-semibold text-[#999] group-[&.active]:text-[#242424] text-lg">이름</div>
+              </div>
+              <div class="w-[72px] h-[2px] bg-[#D1D3D4] mt-[9px]"></div>
+              <div id="step2" class="step group flex flex-col items-center gap-1">
+                <img src="/src/svg/step_2.svg" alt="" class="opacity-50 group-[&.active]:opacity-100" />
+                <div class="font-semibold text-[#999] group-[&.active]:text-[#242424] text-lg">연락처</div>
+              </div>
+              <div class="w-[72px] h-[2px] bg-[#D1D3D4] mt-[9px]"></div>
+              <div id="step3" class="step group flex flex-col items-center gap-1">
+                <img src="/src/svg/step_3.svg" alt="" class="opacity-50 group-[&.active]:opacity-100" />
+                <div class="font-semibold text-[#999] group-[&.active]:text-[#242424] text-lg">메모</div>
+              </div>
+            </div>
+            <div class="swiper max-w-[289px] md:max-w-[572px] grow">
+              <div class="swiper-wrapper h-auto mb-6 md:mb-10">
+                <div class="swiper-slide h-auto">
+                  <div class="text-[#121212] text-[20px] md:text-[32px] font-semibold leading-[26px] md:leading-[40px] text-center mb-10 md:mb-[12.6%]">
+                    프로젝트 시작 전 의뢰인 분의
+                    <br />
+                    성함을 먼저 알려주세요
+                  </div>
+                  <div class="flex flex-col gap-12">
+                    <div class="border-b-2 border-black py-5 flex flex-col md:flex-row items-start md:items-center gap-6 w-full">
+                      <div class="w-[120px] text-base md:text-2xl text-[#767676]">성함</div>
+                      <input class="w-full grow bg-transparent focus:border-none min-h-[29px] text-lg md:text-[29px] text-[#121212] font-medium" type="text" placeholder="의뢰인 분의 성함을 입력해주세요" />
+                    </div>
+                    <div class="border-b-2 border-black py-5 flex flex-col md:flex-row items-start md:items-center gap-6 w-full">
+                      <div class="w-[120px] text-base md:text-2xl text-[#767676]">회사명</div>
+                      <input class="w-full grow bg-transparent focus:border-none min-h-[29px] text-lg md:text-[29px] text-[#121212] font-medium" type="text" placeholder="회사명 또는 브랜드명을 입력해주세요" />
+                    </div>
+                  </div>
                 </div>
-                <div class="w-[72px] h-[2px] bg-[#D1D3D4] mt-[9px]"></div>
-                <div id="step2" class="step group flex flex-col items-center gap-1">
-                  <img src="/src/svg/step_2.svg" alt="" class="opacity-50 group-[&.active]:opacity-100" />
-                  <div class="font-semibold text-[#999] group-[&.active]:text-[#242424] text-lg">연락처</div>
+                <div class="swiper-slide h-auto">
+                  <div class="text-[#121212] text-[20px] md:text-[32px] font-semibold leading-[26px] md:leading-[40px] text-center mb-10 md:mb-[12.6%]">
+                    연락이 가능한 이메일과
+                    <br />
+                    번호를 입력해 주세요
+                  </div>
+                  <div class="flex flex-col gap-12">
+                    <div class="border-b-2 border-black py-5 flex flex-col md:flex-row items-start md:items-center gap-6 w-full">
+                      <div class="w-[120px] text-base md:text-2xl text-[#767676]">이메일</div>
+                      <input class="w-full grow bg-transparent focus:border-none min-h-[29px] text-lg md:text-[29px] text-[#121212] font-medium" type="text" placeholder="연락받으실 이메일을 입력해주세요" />
+                    </div>
+                    <div class="border-b-2 border-black py-5 flex flex-col md:flex-row items-start md:items-center gap-6 w-full">
+                      <div class="w-[120px] text-base md:text-2xl text-[#767676]">전화번호</div>
+                      <input class="w-full grow bg-transparent focus:border-none min-h-[29px] text-lg md:text-[29px] text-[#121212] font-medium" type="text" placeholder="담당자 연락처를 입력해주세요" />
+                    </div>
+                  </div>
                 </div>
-                <div class="w-[72px] h-[2px] bg-[#D1D3D4] mt-[9px]"></div>
-                <div id="step3" class="step group flex flex-col items-center gap-1">
-                  <img src="/src/svg/step_3.svg" alt="" class="opacity-50 group-[&.active]:opacity-100" />
-                  <div class="font-semibold text-[#999] group-[&.active]:text-[#242424] text-lg">메모</div>
+                <div class="swiper-slide h-auto">
+                  <div class="text-[#121212] text-[20px] md:text-[32px] font-semibold leading-[26px] md:leading-[40px] text-center mb-10 md:mb-[12.6%]">
+                    마지막으로 프로젝트에 대해
+                    <br />
+                    남기실 말이 있다면 적어주세요
+                  </div>
+                  <div class="flex flex-col">
+                    <div class="border-b-2 border-black py-5 flex flex-col items-start gap-6 md:gap-10 min-w-[512px]">
+                      <div class="w-[120px] text-base md:text-2xl text-[#767676]">메모</div>
+                      <input class="w-full grow bg-transparent focus:border-none min-h-[29px] text-lg md:text-[29px] text-[#121212] font-medium" type="text" placeholder="프로젝트에 대해 남기실 말이 있다면 간략히 설명해 주세요" />
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="swiper flex flex-col justify-between w-[572px] h-full">
-                <div class="swiper-wrapper relative">
-                  <div class="swiper-slide">
-                    <div class="mt-10 text-[#121212] text-[32px] font-semibold leading-[40px] text-center">
-                      프로젝트 시작 전 의뢰인 분의
-                      <br />
-                      성함을 먼저 알려주세요
-                    </div>
-                    <div class="flex flex-col gap-12 mt-[120px]">
-                      <div class="border-b-2 border-black py-5 flex items-center gap-6 min-w-[512px]">
-                        <div class="w-[120px] text-2xl text-[#767676]">성함</div>
-                        <input class="grow bg-transparent focus:border-none min-h-[29px] text-[29px] text-[#121212] font-medium" type="text" placeholder="의뢰인 분의 성함을 입력해주세요" />
-                      </div>
-                      <div class="border-b-2 border-black py-5 flex items-center gap-6 min-w-[512px]">
-                        <div class="w-[120px] text-2xl text-[#767676]">회사명</div>
-                        <input class="grow bg-transparent focus:border-none min-h-[29px] text-[29px] text-[#121212] font-medium" type="text" placeholder="회사명 또는 브랜드명을 입력해주세요" />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="mt-10 text-[#121212] text-[32px] font-semibold leading-[40px] text-center">
-                      연락이 가능한 이메일과 번호를 입력해 주세요
-                      <br />
-                      번호를 입력해 주세요
-                    </div>
-                    <div class="flex flex-col gap-12 mt-[120px]">
-                      <div class="border-b-2 border-black py-5 flex items-center gap-6 min-w-[512px]">
-                        <div class="w-[120px] text-2xl text-[#767676]">이메일</div>
-                        <input class="grow bg-transparent focus:border-none min-h-[29px] text-[29px] text-[#121212] font-medium" type="text" placeholder="연락받으실 이메일을 입력해주세요" />
-                      </div>
-                      <div class="border-b-2 border-black py-5 flex items-center gap-6 min-w-[512px]">
-                        <div class="w-[120px] text-2xl text-[#767676]">전화번호</div>
-                        <input class="grow bg-transparent focus:border-none min-h-[29px] text-[29px] text-[#121212] font-medium" type="text" placeholder="담당자 연락처를 입력해주세요" />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="mt-10 text-[#121212] text-[32px] font-semibold leading-[40px] text-center">
-                      마지막으로 프로젝트에 대해
-                      <br />
-                      남기실 말이 있다면 적어주세요
-                    </div>
-                    <div class="flex flex-col mt-[120px]">
-                      <div class="border-b-2 border-black py-5 flex flex-col gap-10 min-w-[512px]">
-                        <div class="w-[120px] text-2xl text-[#767676]">메모</div>
-                        <input class="grow bg-transparent focus:border-none min-h-[29px] text-[29px] text-[#121212] font-medium" type="text" placeholder="프로젝트에 대해 남기실 말이 있다면 간략히 설명해 주세요" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-pagination"></div>
-                <div id="swiperBtnBox" class="mx-auto w-full max-w-[405px] mb-10 rounded-lg bg-[#E1E2E4E5] p-2 flex items-center h-[72px] gap-2 z-10">
-                  <button onclick="nextStep();" class="swiper-btn-next grow text-white bg-[#374254E5] h-full flex items-center justify-center rounded-lg px-4 py-2 font-semibold">다음으로</button>
-                  <button onclick="submitData();" class="grow text-white bg-[#0E1424E5] h-full flex items-center justify-center rounded-lg px-4 py-2 font-semibold hidden">제출하기</button>
-                  <button class="w-14 h-14 flex items-center justify-center bg-white rounded-lg"><img src="/src/svg/icon_cancel.svg" alt="" class="" /></button>
-                </div>
+              <div class="swiper-pagination"></div>
+              <div id="swiperBtnBox" class="absolute left-1/2 -translate-x-1/2 bottom-6 md:bottom-10 w-full max-w-[405px] rounded-lg bg-[#E1E2E4E5] p-2 flex items-center h-[72px] gap-2 z-10">
+                <button onclick="nextStep();" class="swiper-btn-next grow text-white bg-[#374254E5] h-full flex items-center justify-center rounded-lg px-4 py-2 font-semibold">다음으로</button>
+                <button onclick="submitData();" class="grow text-white bg-[#0E1424E5] h-full flex items-center justify-center rounded-lg px-4 py-2 font-semibold hidden">제출하기</button>
+                <button class="w-14 h-14 flex items-center justify-center bg-white rounded-lg"><img src="/src/svg/icon_cancel.svg" alt="" class="" /></button>
               </div>
             </div>
           </div>
-          <div id="afterSubmit" class="w-full h-full flex flex-col items-center justify-center hidden">
+          <div id="afterSubmit" class="w-full flex flex-col items-center mt-[120px] md:mt-[240px] hidden">
             <div class="flex flex-col gap-1 items-center">
               <img src="/src/svg/step_complete.svg" alt="" class="w-[18px] h-[18px]" />
               <div class="text-[#242424] text-sm font-semibold">제출완료</div>
             </div>
-            <div class="mt-12 text-[#111111] text-center text-[40px] font-semibold leading-normal">
+            <div class="mt-12 text-[#111111] text-center text-[28px] md:text-[40px] font-semibold leading-normal">
               <span class="text-[#121212] opacity-100">아무무</span>
               <span class="opacity-50">
                 님의
@@ -168,7 +166,7 @@
                 곧 연락드리겠습니다.
               </span>
             </div>
-            <div id="linkBox" class="absolute flex-shrink-0 min-w-fit bottom-[72px] h-[72px] left-1/2 -translate-x-1/2 p-2 flex gap-2 items-center bg-[#E1E2E4E5] rounded-[12px] z-[9999]">
+            <div id="linkBox" class="absolute flex-shrink-0 min-w-fit bottom-6 md:bottom-[72px] h-[72px] left-1/2 -translate-x-1/2 p-2 flex gap-2 items-center bg-[#E1E2E4E5] rounded-[12px] z-[9999]">
               <a href="/index.html" class="block w-14 h-14"><img src="/src/svg/icon_shoooook.svg" alt="" class="size-full object-cover" /></a>
               <a href="/pages/list.html" id="portfolio" class="items-center justify-center min-w-[56px] h-full p-2 relative hidden md:flex">포트폴리오</a>
               <a href="#" class="items-center justify-center min-w-[45px] h-full p-2 hidden md:flex">회사소개</a>
@@ -179,6 +177,26 @@
               <div id="categoryToggleBox" onclick="openModal();" class="w-14 h-14 bg-white rounded-lg flex items-center justify-center cursor-pointer md:hidden">
                 <img src="/src/svg/icon_category.svg" alt="" class="block w-4 h-3" />
                 <img src="/src/svg/icon_cancel.svg" alt="" class="" />
+              </div>
+            </div>
+            <div id="category" class="absolute top-8 bottom-12 left-[16px] right-[16px] z-50 bg-[#EEEEEE] font-['pretendard']">
+              <div class="ml-6 mt-16 text-[32px] font-medium flex flex-col gap-12">
+                <a href="/pages/list.html">포트폴리오</a>
+                <div>회사소개</div>
+                <div>슉 페이지 추가?</div>
+                <a class="flex gap-2 h-10 items-center">
+                  <div>회사소개서</div>
+                  <div href="#" class="ml-2"><img src="/src/svg/icon_download2-black.svg" alt="" /></div>
+                </a>
+              </div>
+              <div class="ml-6 mt-[17.8%] text-[#999] text-sm font-medium">
+                서울, 강남구 대치동, 88-88,
+                <br />
+                3층 코드앤블록
+                <br />
+                codenblock@gmail.com
+                <br />
+                02.1111.1111
               </div>
             </div>
           </div>
@@ -221,6 +239,40 @@
     animation: spin-slow 5s linear infinite;
   }
 </style>
+
+<style>
+  #category {
+    display: none;
+  }
+
+  #category.active {
+    display: block;
+  }
+
+  #categoryToggleBox.active img:first-child {
+    display: none;
+  }
+
+  #categoryToggleBox img:first-child {
+    display: block;
+  }
+
+  #categoryToggleBox.active img:last-child {
+    display: block;
+  }
+
+  #categoryToggleBox img:last-child {
+    display: none;
+  }
+</style>
+
+<!-- 카테고리 팝업 -->
+<script>
+  function openModal() {
+    document.getElementById("category").classList.toggle("active");
+    document.getElementById("categoryToggleBox").classList.toggle("active");
+  }
+</script>
 
 <script>
   let nowStep = 1;
@@ -285,6 +337,12 @@
     font-weight: 500;
     color: #121212;
     opacity: 1;
+  }
+
+  @media (max-width: 768px) {
+    input::placeholder {
+      font-size: 18px;
+    }
   }
 
   .toContainerBox {

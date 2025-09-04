@@ -210,7 +210,8 @@
   </style>
 
   <script>
-    let currentId = 1;
+    const urlParams = new URLSearchParams(window.location.search);
+    let currentId = parseInt(urlParams.get("id")) || 1;
     const prevBtn = document.getElementById("prevBtn");
     const nextBtn = document.getElementById("nextBtn");
 
@@ -442,7 +443,7 @@
       const gridBox = document.querySelector('[cnb_module="shk-detail-grid"]');
       if (!gridBox || !Array.isArray(images)) return;
 
-      gridBox.innerHTML = ""; 
+      gridBox.innerHTML = "";
 
       images.forEach((src, index) => {
         const wrapper = document.createElement("div");

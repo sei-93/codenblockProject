@@ -1,0 +1,111 @@
+.toContainerBox {
+  overflow: auto; /* 스크롤 동작 유지 */
+  scrollbar-width: none; /* Firefox */
+}
+.toContainerBox::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+#category {
+  display: none;
+}
+
+#category.active {
+  display: block;
+}
+
+#categoryToggleBox.active img:first-child {
+  display: none;
+}
+
+#categoryToggleBox img:first-child {
+  display: block;
+}
+
+#categoryToggleBox.active img:last-child {
+  display: block;
+}
+
+#categoryToggleBox img:last-child {
+  display: none;
+}
+
+.strip-track {
+  display: inline-flex;
+  animation: strip-move 20s linear infinite;
+}
+
+@keyframes strip-move {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.swiperPaginationParentBox {
+  /* max-width: 150px; */
+  position: relative;
+  width: 100%;
+  margin: 80px auto;
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+
+  overflow: hidden;
+}
+
+.swiper-pagination-bullet {
+  width: 2px;
+  height: 12px;
+  /* 기본 높이 */
+  background: #c4c4c4;
+  opacity: 1;
+  border-radius: 0;
+  transition: all 0.3s;
+  flex-shrink: 0;
+}
+
+.swiper-pagination-bullet-active {
+  height: 18px;
+  /* active 높이 */
+  background: #0b1623;
+}
+
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 5s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes bg-slide {
+  0%   { background-position: 0% 0, 0% 0; }
+  100% { background-position: 300% 0, 300% 0; }
+}
+#portfolio::after {
+  content: "21";
+  border-radius: 100px;
+  position: absolute;
+  top: -2px;
+  right: 0;
+  color: white;
+  font-size: 12px;
+  font-family: "Asta Sans";
+  background: #020f2333;
+  padding: 2px 8px;
+}

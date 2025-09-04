@@ -29,6 +29,7 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="/style/main_animation.css" />
+    <link rel="stylesheet" href="/style/common.css" />
 
     <!-- util js -->
     <script defer src="/js/timeCalc.js"></script>
@@ -117,7 +118,7 @@
           <a href="/index.html" class="block w-14 h-14"><img src="/src/svg/icon_shoooook.svg" alt="" class="size-full object-cover" /></a>
           <a href="/pages/list.html" id="portfolio" class="items-center justify-center min-w-[56px] h-full p-2 relative hidden md:flex">포트폴리오</a>
           <a href="#" class="items-center justify-center min-w-[45px] h-full p-2 hidden md:flex">회사소개</a>
-          <div href="#" class="text-nowrap flex items-center justify-center min-w-[70px] h-full overflow-hidden relative p-[1px] rounded-[8px]">
+          <div class="text-nowrap flex items-center justify-center min-w-[70px] h-full overflow-hidden relative p-[1px] rounded-[8px]">
             <div class="absolute aspect-square w-[120px] rounded-full animate-spin-slow bg-[conic-gradient(#767676,#F1F1F1,#999999,#767676,#F1F1F1,#999999)]"></div>
             <a href="/pages/contact.html" class="w-full h-full bg-white flex items-center justify-center px-4 rounded-[8px] z-10">프로젝트 문의</a>
           </div>
@@ -126,7 +127,7 @@
             <img src="/src/svg/icon_cancel.svg" alt="" class="" />
           </div>
         </div>
-        <div id="footer" class="flex items-center justify-between mx-4 absolute bottom-2.5 left-0 right-0">
+        <div id="footer" class="flex items-center justify-between mx-2 absolute bottom-2.5 left-0 right-0">
           <a href="/index.html"><img src="/src/svg/text_codenblock.svg" alt="" /></a>
           <div class="items-center gap-2 hidden md:flex">
             <a href="mailto:codenblock@gmail.com">codenblock@gmail.com</a>
@@ -166,49 +167,6 @@
       <div class="box bg-black absolute bottom-8 right-2 w-4 h-4"></div>
     </div>
   </body>
-
-  <style>
-    #category {
-      display: none;
-    }
-
-    #category.active {
-      display: block;
-    }
-
-    #categoryToggleBox.active img:first-child {
-      display: none;
-    }
-
-    #categoryToggleBox img:first-child {
-      display: block;
-    }
-
-    #categoryToggleBox.active img:last-child {
-      display: block;
-    }
-
-    #categoryToggleBox img:last-child {
-      display: none;
-    }
-  </style>
-
-  <style>
-    .strip-track {
-      display: inline-flex;
-      animation: strip-move 20s linear infinite;
-    }
-
-    @keyframes strip-move {
-      0% {
-        transform: translateX(0);
-      }
-
-      100% {
-        transform: translateX(-50%);
-      }
-    }
-  </style>
 
   <!-- 카테고리 팝업 -->
   <script>
@@ -274,52 +232,6 @@
   </script>
 
   <style>
-    .swiperPaginationParentBox {
-      /* max-width: 150px; */
-      position: relative;
-      width: 100%;
-      margin: 80px auto;
-    }
-
-    .swiper-pagination {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 20px;
-
-      overflow: hidden;
-    }
-
-    .swiper-pagination-bullet {
-      width: 2px;
-      height: 12px;
-      /* 기본 높이 */
-      background: #c4c4c4;
-      opacity: 1;
-      border-radius: 0;
-      transition: all 0.3s;
-      flex-shrink: 0;
-    }
-
-    .swiper-pagination-bullet-active {
-      height: 18px;
-      /* active 높이 */
-      background: #0b1623;
-    }
-  </style>
-
-  <!-- 버튼 border 회전 -->
-  <style>
-    @keyframes spin-slow {
-      0% {
-        transform: rotate(0deg);
-      }
-
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-
     #contentHeader,
     .boxes {
       animation: disappear 0s forwards, appear 0.3s 1.7s forwards;
@@ -362,12 +274,12 @@
       animation: disappear 0s forwards, appear 0.3s 2.7s ease-out forwards;
     }
 
-    body.final-state .text-1,
+    /* body.final-state .text-1,
     body.final-state .text-3 {
-      opacity: 0; 
+      opacity: 0;
     }
     body.final-state .text-2 {
-      opacity: 0; 
+      opacity: 0;
     }
     body.final-state .toContainerBox {
       animation: loading-text-step-7 0s forwards;
@@ -383,19 +295,6 @@
     body.final-state #mainBanner,
     body.final-state .textBox {
       animation: appear 0s forwards;
-    }
-
-    #portfolio::after {
-      content: "21";
-      border-radius: 100px;
-      position: absolute;
-      top: -2px;
-      right: 0;
-      color: white;
-      font-size: 12px;
-      font-family: "Asta Sans";
-      background: #020f2333;
-      padding: 2px 8px;
-    }
+    } */
   </style>
 </html>

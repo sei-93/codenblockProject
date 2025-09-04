@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- pretendard -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <!-- onset -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet" />
+
+    <!--Asta Sans  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&family=Onest:wght@100..900&display=swap" rel="stylesheet" />
+
+    <!-- Noto Serif Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+    <!-- Archivo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Asta+Sans:wght@300..800&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&display=swap" rel="stylesheet" />
+
+    <!-- tailwindcss -->
+    <script src="/js/tailwind.js"></script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/style/main_animation.css" />
+    <link rel="stylesheet" href="/style/common.css" />
+
+    <!-- util js -->
+    <script defer src="/js/disableRightClick.js"></script>
+  </head>
+  <body class="bg-[#fff] leading-[130%] tracking-[-1px] text-sm relative" oncontextmenu="return false;" style="font-family: 'Asta Sans', sans-serif">
+    <div class="w-screen h-screen">
+      <div class="absolute inset-2 bottom-8 overflow-y-scroll toContainerBox">
+        <section id="section1" class="w-full min-h-full relative flex flex-col justify-between pb-20 md:justify-normal px-20 pt-20">
+          <div class="flex flex-col gap-4 uppercase font-['Archivo'] text-white text-2xl sm:text-4xl md:text-6xl lg:text-[80px] font-medium leading-[100%] max-w-[950px] relative z-30">
+            <div>Today’s work</div>
+            <div class="self-center">for long-lasting</div>
+            <div class="flex justify-between items-center">
+              <div>results</div>
+              <div>built simple</div>
+            </div>
+            <div>made to scale</div>
+          </div>
+          <div class="self-start md:self-end flex flex-col text-base text-white md:mt-[65px] z-30 relative">
+            <div class="mb-6">SINCE 2019</div>
+            <div>우리는 클라이언트의 흐름부터 다시 질문합니다. <br>필요 없는건 덜어내고, 필요한 기능은 새로 만듭니다.<br> 여정은 최대한 간단하게, 결과는 명확하게 <br> 운영이 쉬운 결과물은 우리의 기준이 됩니다.</div>
+          </div> 
+          <div class="absolute inset-0"><img src="/src/about/mainBanner.png" alt="" class="size-full object-cover" /></div>
+          <div class="absolute inset-0 flex items-center justify-center"><img src="/src/about/mainBanner-sm.png" alt="" class="w-[69.6%] md:w-[32.4%] aspect-[617/720]" /></div>
+        </section>
+        <section id="section2" class="relative min-h-full flex flex-col">
+          <div class="uppercase text-[#E0DEDD] font-['Onest'] flex flex-col gap-[6px] md:gap-0 text-base md:text-[64px] font-medium leading-[100%] mt-12 md:mx-[165px] ml-[25px]">
+            <div class="self-end first-letter:text-black">Hi, we’re Code&Block.</div>
+            <div class="self-start">We design (what’s easy to use) and</div>
+            <div class="self-center">build (what’s easy to manage).</div>
+          </div>
+          <div class="mt-8 md:mt-12 ml-4  md:mx-[165px]">
+            <div class="text-xl text-[#121212] w-full max-w-[429px]">고객 니즈에 빠르게 대응하는 디자인과, 직접 설계한 모듈로 구축을 넘어 관리, 유지, 운영이 쉬운 결과물을 함께 고민하고쇼핑몰의 흐름, 페이지의 경험을 설계합니다.</div>
+          </div>
+          <div class="mt-[72px] md:mt-[120px]">
+            <div class="flex justify-between items-center mx-4 md:mx-[165px] text-[#999999]">
+              <div class="flex justify-between items-center w-[92px] md:w-[175px]">
+                <div>[WHY CNB?]</div>
+                <div>01</div>
+              </div>
+              <div class="uppercase">technology</div>
+            </div>
+            <div class="mt-4 border-t border-b border-[#999999] flex flex-col md:flex-row justify-evenly md:px-[165px] divide-y md:divide-y-0">
+              <div class="p-12 border-[#999] md:border-l flex flex-col justify-between">
+                <div>
+                  <div class="text-[#121212] text-2xl font-semibold">이커머스 솔루션</div>
+                  <div class="mt-4 text-base text-[#646464]">상품 구조, 결제 플로우, 관리자 화면까지 실제 운영 환경에 최적화된 솔루션을 제공하고 단순한 구축이 아니라 관리와 운영이 쉬운 구조와 판매에 유리한 화면 흐름을 함께 고민하고 제안하여 비즈니스에 꼭 맞는 이커머스 흐름을 설계합니다.</div>
+                </div>
+                <div class="flex justify-between items-end uppercase">
+                  <div class="flex flex-col gap-4 text-[#646464] leading-[110%] text-sm font-['Onset']">
+                    <div>Online Store Setup</div>
+                    <div>Back-office UX</div>
+                    <div>Store Management</div>
+                  </div>
+                  <div>
+                    <img src="/src/about/section2-item1.png" alt="" class="size-[160px]" />
+                  </div>
+                </div>
+              </div>
+              <div class="p-12 border-[#999] md:border-l flex flex-col justify-between">
+                <div>
+                  <div class="text-[#121212] text-2xl font-semibold">디자인</div>
+                  <div class="mt-4 text-base text-[#646464]">UX/UI 설계를 비롯한 브랜드 비주얼, 콘텐츠 디자인까지 쇼핑몰 전반의 일관된 사용자 경험을 설계합니다. 빠른 탐색, 쉬운 구매와 운영 경험이 이어지는 디자인, 브랜드와 사용자를 모두 고려한 디자인을 만듭니다.</div>
+                </div>
+                <div class="flex justify-between items-end uppercase">
+                  <div class="flex flex-col gap-4 text-[#646464] leading-[110%] text-sm font-['Onset']">
+                    <div>UX/UI Design</div>
+                    <div>Content Design</div>
+                    <div>PRODUCT DESIGN</div>
+                  </div>
+                  <div>
+                    <img src="/src/about/section2-item1.png" alt="" class="size-[160px]" />
+                  </div>
+                </div>
+              </div>
+              <div class="p-12 border-[#999] md:border-l md:border-r flex flex-col justify-between">
+                <div>
+                  <div class="text-[#121212] text-2xl font-semibold">개발</div>
+                  <div class="mt-4 text-base text-[#646464]">웹 접근성, 반응형 레이아웃, 퍼블리싱 최적화를 기본으로 하여 필요한 경우 인터랙션과 앱 개발까지 지원합니다. 운영과 확장이 쉽도록 깔끔하고 유지보수하기 쉬운 코드로 결과물을 만듭니다.</div>
+                </div>
+                <div class="flex justify-between items-end uppercase">
+                  <div class="flex flex-col gap-4 text-[#646464] leading-[110%] text-sm font-['Onset']">
+                    <div>Web Publishing</div>
+                    <div>Front-end Development</div>
+                    <div>App Development</div>
+                  </div>
+                  <div>
+                    <img src="/src/about/section2-item1.png" alt="" class="size-[160px]" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="section3" class="relative h-full">
+          <div class="mt-10 md:mt-[120px] flex flex-col md:flex-row md:justify-between md:items-end md:mx-[165px]">
+            <div class="w-[64.8%] md:w-[40.9%] mb-[58px] md:mb-0">
+              <div class="uppercase font-['Onset'] text-2xl md:text-[64px] font-medium leading-[100%] ">
+                <div>People who</div>
+                <div>deeply</div>
+                <div>Love <span class="ml-6">The Web</span></div>
+              </div>
+              <img src="/src/about/section3-item1.png" alt="" class="mt-6" />
+            </div>
+            <div class="w-[73.9%] md:w-[27.3%] self-end">
+              <div class="flex flex-row justify-between mb-6">
+                <div class="font-['Onset'] text-lg md:text-[32px] text-[#111] leading-[100%] font-medium self-end uppercase shrink-0 mr-[34px]">we create <br> true value</div>
+                <img src="/src/about/section3-item2.png" alt="" class="w-[57.9%]" />
+              </div>
+              <div class="text-[#121212] text-sm md:text-base">우리가 웹을 사랑하지 않는다면 고객을 위한 가치를 만들어 낼 수 있을까요? 코드앤블록 팀은 웹에 대한 깊은 애정이 있기에 웹을 단순한 기술이 아닌 무한한 가능성을 열어주는 매체로 웹에 대한 열정을 바탕으로 다양한 아이디어와 접근 방식을 끊임없이 탐구하며, 이를 통해 고객의 표면적인 요구를 넘어서는 진정한 가치를 창출합니다. 웹을 사랑하는 것은 모든 프로젝트를 시작할 때 품고 있는 기본적인 마음가짐이자 최고의 결과를 만드는 원동력입니다.</div>
+            </div>
+          </div>
+        </section>
+        <section id="section4" class="relative">
+          <div class="flex justify-between items-center px-4 md:px-[165px] pb-4 text-[#999999] mt-[160px] border-b border-[#999999]">
+            <div class="flex justify-between items-center w-[92px] md:w-[175px]">
+              <div>[WE CNB?]</div>
+              <div>02</div>
+            </div>
+            <div class="uppercase">history</div>
+          </div>
+          <div class="mt-10 md:mt-20 flex flex-col md:flex-row justify-between md:gap-[240px] mx-4 md:mx-[165px]">
+            <div class="text-2xl md:text-[48px] font-bold leading-[130%] md:w-[312px] shrink-0">
+              국내 IT 분야에서
+              <br />
+              인정받은 기술력
+            </div>
+            <div class="mt-10 md:mt-[204px] w-full">
+              <div class="text-base text-[#121212] self-start">
+                코드앤블록은 사용자 중심의 이커머스 디자인과 경험을 제공하는 데 자부심을 가지고 있습니다.
+                <br class="hidden md:block" />
+                우리는 고객과 함께 브랜드를 효과적으로 사용자 경험으로 전달하는 방법을 고민합니다.
+                <br class="hidden md:block" />
+                디자인과 안정적인 기술력으로 최고의 사용자 경험, 운영 관리의 더 나은 경험을 만들어갑니다.
+              </div>
+              <div class="pt-6">
+                <div class="py-8 flex gap-[169px] border-t border-[#DDD]">
+                  <div class="font-['Noto+Serif+Display'] hidden md:blockitalic font-light">01.</div>
+                  <div class="flex flex-col gap-4">
+                    <div class="text-[#464646] text-lg">2025.08</div>
+                    <div class="text-xl text-[#121212]">결제 전환율 개선 서비스 결제 슉(Pay Shooook) 카페24 App Store 출시</div>
+                  </div>
+                </div>
+                <div class="py-8 flex gap-[169px] border-t border-[#DDD]">
+                  <div class="font-['Noto+Serif+Display'] hidden md:blockitalic font-light">01.</div>
+                  <div class="flex flex-col gap-4">
+                    <div class="text-[#464646] text-lg">2025.08</div>
+                    <div class="text-xl text-[#121212]">결제 전환율 개선 서비스 결제 슉(Pay Shooook) 카페24 App Store 출시</div>
+                  </div>
+                </div>
+                <div class="py-8 flex gap-[169px] border-t border-[#DDD]">
+                  <div class="font-['Noto+Serif+Display'] hidden md:blockitalic font-light">02.</div>
+                  <div class="flex flex-col gap-4">
+                    <div class="text-[#464646] text-lg">2025.08</div>
+                    <div class="text-xl text-[#121212]">카페24 고객사 전용 제품관리 서비스 - 제품 슉(Product Shooook) 도입</div>
+                  </div>
+                </div>
+                <div class="py-8 flex gap-[169px] border-t border-[#DDD]">
+                  <div class="font-['Noto+Serif+Display'] hidden md:blockitalic font-light">03.</div>
+                  <div class="flex flex-col gap-4">
+                    <div class="text-[#464646] text-lg">2025.01</div>
+                    <div class="text-xl text-[#121212]">스플래시 서비스 로딩 슉(Loading Shooook) 카페24 App Sotre 출시</div>
+                  </div>
+                </div>
+                <div class="py-8 flex gap-[169px] border-t border-[#DDD]">
+                  <div class="font-['Noto+Serif+Display'] hidden md:blockitalic font-light">04.</div>
+                  <div class="flex flex-col gap-4">
+                    <div class="text-[#464646] text-lg">2024.11</div>
+                    <div class="text-xl text-[#121212]">웹 에이전시 업무 진행사항 공유 툴(Work Shooook) 도입</div>
+                  </div>
+                </div>
+                <div class="py-8 flex gap-[169px] border-t border-[#DDD]">
+                  <div class="font-['Noto+Serif+Display'] hidden md:blockitalic font-light">05.</div>
+                  <div class="flex flex-col gap-4">
+                    <div class="text-[#464646] text-lg">2024.10</div>
+                    <div class="text-xl text-[#121212]">자사 서비스 브랜드(Shooook) 런칭</div>
+                  </div>
+                </div>
+                <div class="py-8 flex gap-[169px] border-t border-[#DDD]">
+                  <div class="font-['Noto+Serif+Display'] hidden md:blockitalic font-light">06.</div>
+                  <div class="flex flex-col gap-4">
+                    <div class="text-[#464646] text-lg">2023.09</div>
+                    <div class="text-xl text-[#121212]">코드앤블록 기업부설연구소 설립</div>
+                  </div>
+                </div>
+                <div class="py-8 flex gap-[169px] border-t border-[#DDD]">
+                  <div class="font-['Noto+Serif+Display'] hidden md:blockitalic font-light">07.</div>
+                  <div class="flex flex-col gap-4">
+                    <div class="text-[#464646] text-lg">2023.05 / Cloud Headless CMS</div>
+                    <div class="text-xl text-[#121212]">정부 디딤돌 지역참업연계 R&D과제 선정</div>
+                  </div>
+                </div>
+                <div class="py-8 flex gap-[169px] border-t border-[#DDD]">
+                  <div class="font-['Noto+Serif+Display'] hidden md:blockitalic font-light">08.</div>
+                  <div class="flex flex-col gap-4">
+                    <div class="text-[#464646] text-lg">2023.03</div>
+                    <div class="text-xl text-[#121212]">코드앤블록 설립 및 창업진흥원 재도전성공패키지 선정</div>
+                  </div>
+                </div>
+                <div class="py-8 flex gap-[169px] border-t border-[#DDD]">
+                  <div class="font-['Noto+Serif+Display'] hidden md:blockitalic font-light">09.</div>
+                  <div class="flex flex-col gap-4">
+                    <div class="text-[#464646] text-lg">2023.02 / Headless CMS & Module System</div>
+                    <div class="text-xl text-[#121212]">카카오 엔터프라이즈 ICT 연계사업 선정</div>
+                  </div>
+                </div>
+                <div class="py-8 flex gap-[169px] border-t border-[#DDD]">
+                  <div class="font-['Noto+Serif+Display'] hidden md:blockitalic font-light">10.</div>
+                  <div class="flex flex-col gap-4">
+                    <div class="text-[#464646] text-lg">2022.12</div>
+                    <div class="text-xl text-[#121212]">창업진흥원 2022 IR 행사 대상</div>
+                  </div>
+                </div>
+                <div class="py-8 flex gap-[169px] border-t border-[#DDD]">
+                  <div class="font-['Noto+Serif+Display'] hidden md:blockitalic font-light">11.</div>
+                  <div class="flex flex-col gap-4">
+                    <div class="text-[#464646] text-lg">2022.11</div>
+                    <div class="text-xl text-[#121212]">창업진흥원 2022 RE:DEMODAY 최우수상</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="section5" class="relative">
+          <div class="flex flex-col md:flex-row mt-20 w-full h-[343px] md:h-[720px]">
+            <div class="relative grow h-full bg-[url('/src/about/section5-item1.png')] bg-top md:bg-[position:calc(50%+200px)_center] bg-cover">
+              <div class="uppercase pl-8 pt-6 md:pl-20 md:pt-20 text-2xl md:text-[80px] leading-[100%] font-['Archivo'] text-[#E0DEDD]">
+                Our love for the web
+                <br />
+                drives better outcomes.
+              </div>
+            </div>
+            <div class="md:w-[320px] bg-[#252527] p-4 md:p-12 flex flex-col justify-end">
+              <div class="flex flex-col gap-2 text-[#E0DEDD] text-base mt-auto">
+                <div>
+                  서울, 강남구 대치동, 88-88,
+                  <br class="hidden md:block" />
+                  3층 코드앤블록
+                </div>
+                <a href="mailto:codenblock@gmail.com">codenblock@gmail.com</a>
+                <div>02.1111.1111</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="section6" class="relative">
+          <div class="mt-40">
+            <div class="text-[#111] text-4xl md:text-[64px] font-medium uppercase leading-[64px] text-center">
+              <div>Let’s make</div>
+              <div>something useful.</div>
+            </div>
+          </div>
+          <div class="mt-8">
+            <div class="text-[#464646] text-xl text-center">원하는 결과, 함께 만들어드립니다</div>
+          </div>
+          <div class="mt-20 mb-20 md:mb-[185px]">
+            <div class="w-full h-full justify-center items-center">
+              <button id="projectInquiryBtn" class="w-full max-w-[400px] h-[100px] mx-5 flex justify-between items-center bg-[#F1F1F1E5] p-2 pr-6 rounded-2xl">
+                <div class="bg-[#D9D9D9] flex items-center justify-center px-6 py-[26px] rounded-xl"><img src="/src/svg/icon_arrow-right-big.svg" alt="" /></div>
+                <div class="text-[#121212] text-[32px] font-bold">프로젝트 문의</div>
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="footer" class="flex items-center justify-between mx-2 absolute bottom-2.5 left-0 right-0">
+        <a href="/index.html"><img src="/src/svg/text_codenblock.svg" alt="" /></a>
+        <div class="items-center gap-2 hidden md:flex">
+          <a href="mailto:codenblock@gmail.com">codenblock@gmail.com</a>
+          <div class="w-1 h-1 bg-[#E1E2E4]"></div>
+          <a href="#" class="flex gap-1.5 items-center">
+            <div class="text-sm font-medium flex">회사소개서</div>
+            <div class="w-[18px] h-[18px]"><img src="/src/svg/icon_download2-black.svg" alt="" class="size-full object-cover" /></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="boxes fixed inset-0 flex items-center justify-center pointer-events-none z-[9999]">
+      <div class="box bg-black absolute top-2 left-2 w-4 h-4"></div>
+      <div class="box bg-black absolute top-2 right-2 w-4 h-4"></div>
+      <div class="box bg-black absolute bottom-8 left-2 w-4 h-4"></div>
+      <div class="box bg-black absolute bottom-8 right-2 w-4 h-4"></div>
+    </div>
+  </body>
+
+</html>
